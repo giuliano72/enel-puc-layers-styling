@@ -1,0 +1,605 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=COMPOSER&tags=composer,infrastructure
+Content-Type: application/json
+
+[
+  {
+    "classIds": "XVANSU",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "XVANSU_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "XVANSU",
+        "styleType": "POINT",
+        "description": "XVANSU",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg"
+      },
+      {
+        "styleId": "XVANSU-editMode",
+        "styleType": "POINT",
+        "description": "XVANSU-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg"
+      },
+      {
+        "styleId": "XVANSU-dismantled",
+        "styleType": "POINT",
+        "description": "XVANSU-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg"
+      },
+      {
+        "styleId": "XVANSU-outOfService",
+        "styleType": "POINT",
+        "description": "XVANSU-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "XVANSU-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "STRNOD",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "STRNOD_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "STRNOD",
+        "styleType": "POINT",
+        "description": "STRNOD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg"
+      },
+      {
+        "styleId": "STRNOD-editMode",
+        "styleType": "POINT",
+        "description": "STRNOD-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg"
+      },
+      {
+        "styleId": "STRNOD-dismantled",
+        "styleType": "POINT",
+        "description": "STRNOD-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg"
+      },
+      {
+        "styleId": "STRNOD-outOfService",
+        "styleType": "POINT",
+        "description": "STRNOD-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "STRNOD-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "STRNOD-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "STRNOD-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "STRNOD",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.form[0].fields[4].value",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "16",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVDPCC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVDPCC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVDPCC",
+        "styleType": "LINE",
+        "description": "LVDPCC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVDPCC-editMode",
+        "styleType": "LINE",
+        "description": "LVDPCC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVDPCC-dismantled",
+        "styleType": "LINE",
+        "description": "LVDPCC-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVDPCC-outOfService",
+        "styleType": "LINE",
+        "description": "LVDPCC-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "weight": 1,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVDPCC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "CNFAST",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "CNFAST_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "CNFAST",
+        "styleType": "POINT",
+        "description": "CNFAST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg"
+      },
+      {
+        "styleId": "CNFAST-dismantled",
+        "styleType": "POINT",
+        "description": "CNFAST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg"
+      },
+      {
+        "styleId": "CNFAST-outOfService",
+        "styleType": "POINT",
+        "description": "CNFAST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg"
+      },
+      {
+        "styleId": "CNFAST-editMode",
+        "styleType": "POINT",
+        "description": "CNFAST-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "CNFAST-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "UCNINO",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "UCNINO_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "UCNINO",
+        "styleType": "POINT",
+        "description": "UCNINO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg"
+      },
+      {
+        "styleId": "UCNINO-dismantled",
+        "styleType": "POINT",
+        "description": "UCNINO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg"
+      },
+      {
+        "styleId": "UCNINO-outOfService",
+        "styleType": "POINT",
+        "description": "UCNINO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg"
+      },
+      {
+        "styleId": "UCNINO-editMode",
+        "styleType": "POINT",
+        "description": "UCNINO-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "UCNINO-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "UCNINO-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "UCNINO-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "UCNINO",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144124.200.json
+<> 2025-06-10T135911.200.json
+
+###

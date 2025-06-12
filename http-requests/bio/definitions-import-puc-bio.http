@@ -1,0 +1,1748 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&environment=BIO&tags=puc,biodiversity
+Content-Type: application/json
+
+[
+  {
+    "classIds": "biodiv,biodiv:biodiv,BIO1,BIO4CH,BIO3,BIO4PA,BIO4RA,BIO2",
+    "styles": [
+      {
+        "styleId": "BIODIV_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#0000FF"
+      },
+      {
+        "styleId": "biodiv",
+        "styleType": "POLYGON",
+        "description": "biodiv",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "",
+        "color": "#0000FF",
+        "weight": 3,
+        "fillColor": "#0000FF",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.classId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.feature.properties.code", "context.feature.properties.descriptio"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "istat-[a-z]{2}-[a-z]{2},TU_BlueTeam,TU_Technicians,TerritorialUnit,OperationalRegionalArea,OMArea_OperativeCenter,CFT,COUNTRY",
+    "styles": [
+      {
+        "styleId": "ENVIRONMENT_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#0000FF"
+      },
+      {
+        "styleId": "environment",
+        "styleType": "POLYGON",
+        "description": "environment",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "",
+        "color": "#0000FF",
+        "weight": 3,
+        "fillColor": "#0000FF",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.getPucGisLayer(context.classId, context).description)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+' - '+context.feature.properties.description+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.getPucGisLayer(context.classId, context).description",
+          "subTitles": ["context.feature.properties.code", "context.feature.properties.description"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "WMS_BioDiv:IUCN",
+    "styles": [
+      {
+        "styleId": "Water",
+        "styleType": "POINT",
+        "description": "Water",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#002de1",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest",
+        "styleType": "POINT",
+        "description": "Forest",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0a941c",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Boreal",
+        "styleType": "POINT",
+        "description": "Forest - Boreal",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#115e4e",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subarctic",
+        "styleType": "POINT",
+        "description": "Forest - Subarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#07a187",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subantarctic",
+        "styleType": "POINT",
+        "description": "Forest - Subantarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00fac0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Temperate",
+        "styleType": "POINT",
+        "description": "Forest - Temperate",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#27a170",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subtropical-tropical dry",
+        "styleType": "POINT",
+        "description": "Forest - Subtropical-tropical dry",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#9df941",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subtropical-tropical moist lowland",
+        "styleType": "POINT",
+        "description": "Forest - Subtropical-tropical moist lowland",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#2af434",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subtropical-tropical mangrove vegetation",
+        "styleType": "POINT",
+        "description": "Forest - Subtropical-tropical mangrove vegetation",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#a0fecc",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subtropical-tropical swamp",
+        "styleType": "POINT",
+        "description": "Forest - Subtropical-tropical swamp",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#677e2d",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Forest - Subtropical-tropical moist montane",
+        "styleType": "POINT",
+        "description": "Forest - Subtropical-tropical moist montane",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00c410",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Savanna",
+        "styleType": "POINT",
+        "description": "Savanna",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#c6ff53",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Savanna - Dry",
+        "styleType": "POINT",
+        "description": "Savanna - Dry",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#f5e936",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Savanna - Moist",
+        "styleType": "POINT",
+        "description": "Savanna - Moist",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#cdff27",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland",
+        "styleType": "POINT",
+        "description": "Shrubland",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#eaa03f",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Subarctic",
+        "styleType": "POINT",
+        "description": "Shrubland - Subarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#645800",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Subantarctic",
+        "styleType": "POINT",
+        "description": "Shrubland - Subantarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#7b7a60",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Boreal",
+        "styleType": "POINT",
+        "description": "Shrubland - Boreal",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#84a79b",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Temperate",
+        "styleType": "POINT",
+        "description": "Shrubland - Temperate",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#9addd4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Subtropical-tropical dry",
+        "styleType": "POINT",
+        "description": "Shrubland - Subtropical-tropical dry",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffe97b",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Subtropical-tropical moist",
+        "styleType": "POINT",
+        "description": "Shrubland - Subtropical-tropical moist",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#f0a625",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Subtropical-tropical high altitude",
+        "styleType": "POINT",
+        "description": "Shrubland - Subtropical-tropical high altitude",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ce9bc2",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubland - Mediterranean-type",
+        "styleType": "POINT",
+        "description": "Shrubland - Mediterranean-type",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#7f1dd5",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland",
+        "styleType": "POINT",
+        "description": "Grassland",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#98fae7",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Tundra",
+        "styleType": "POINT",
+        "description": "Grassland - Tundra",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#bdeed8",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Subarctic",
+        "styleType": "POINT",
+        "description": "Grassland - Subarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#adc4c0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Subantarctic",
+        "styleType": "POINT",
+        "description": "Grassland - Subantarctic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#264758",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Temperate",
+        "styleType": "POINT",
+        "description": "Grassland - Temperate",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#33b988",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Subtropical-tropical dry",
+        "styleType": "POINT",
+        "description": "Grassland - Subtropical-tropical dry",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#fff5cb",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Subtropical-tropical seasonally wet or flooded",
+        "styleType": "POINT",
+        "description": "Grassland - Subtropical-tropical seasonally wet or flooded",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#89e8f0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Grassland - Subtropical-tropical high altitude",
+        "styleType": "POINT",
+        "description": "Grassland - Subtropical-tropical high altitude",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#facbff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland)",
+        "styleType": "POINT",
+        "description": "Wetlands (inland)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#5bb5ff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent rivers streams creeks",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent rivers streams creeks",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00fafa",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Seasonal/intermittent/irregular rivers/streams/creeks",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Seasonal/intermittent/irregular rivers/streams/creeks",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#d6a0f9",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Shrub dominated wetlands",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Shrub dominated wetlands",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#bf2ae8",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Bogs/marshes/swamps/fens/peatlands",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Bogs/marshes/swamps/fens/peatlands",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#314872",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent freshwater lakes",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent freshwater lakes",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0e77d9",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Seasonal/intermittent freshwater lakes (over 8 ha)",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Seasonal/intermittent freshwater lakes (over 8 ha)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#6e96c4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent freshwater marshes/pools (under 8 ha)",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent freshwater marshes/pools (under 8 ha)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00add8",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Seasonal/intermittent freshwater marshes/pools (under 8 ha)",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Seasonal/intermittent freshwater marshes/pools (under 8 ha)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#218ed6",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Freshwater springs and oases",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Freshwater springs and oases",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#301f99",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Tundra wetlands",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Tundra wetlands",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#a1e6ec",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Alpine wetlands",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Alpine wetlands",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#c7e1e4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Geothermal wetlands",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Geothermal wetlands",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#f9e9d4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent inland deltas",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent inland deltas",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0025fc",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent saline brackish or alkaline lakes",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent saline brackish or alkaline lakes",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#166b95",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Seasonal/intermittent saline brackish or alkaline lakes and flats",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Seasonal/intermittent saline brackish or alkaline lakes and flats",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#46a4c0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Permanent /saline / brackish or alkaline marshes/pools",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Permanent /saline / brackish or alkaline marshes/pools",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#3e71e0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) - Seasonal/intermittent /saline / brackish or alkaline marshes/pools",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) - Seasonal/intermittent /saline / brackish or alkaline marshes/pools",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#9c75d0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Wetlands (inland) / Karst and other subterranean hydrological systems",
+        "styleType": "POINT",
+        "description": "Wetlands (inland) / Karst and other subterranean hydrological systems",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ff01bc",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Rocky Areas",
+        "styleType": "POINT",
+        "description": "Rocky Areas",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#a59283",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Desert",
+        "styleType": "POINT",
+        "description": "Desert",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#fffce1",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Desert - Hot",
+        "styleType": "POINT",
+        "description": "Desert - Hot",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffb701",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Desert - Temperate",
+        "styleType": "POINT",
+        "description": "Desert - Temperate",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#e4e9d4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Desert - Cold",
+        "styleType": "POINT",
+        "description": "Desert - Cold",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#daedf5",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Neritic",
+        "styleType": "POINT",
+        "description": "Marine - Neritic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#99ddf7",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Neritic Pelagic",
+        "styleType": "POINT",
+        "description": "Marine - Neritic Pelagic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#d1ecf7",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Coral Reefs",
+        "styleType": "POINT",
+        "description": "Marine - Coral Reefs",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#fd7c6e",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Seagrass (submerged)",
+        "styleType": "POINT",
+        "description": "Marine - Seagrass (submerged)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#86a475",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Oceanic",
+        "styleType": "POINT",
+        "description": "Marine - Oceanic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#1da2d8",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Epipelagic",
+        "styleType": "POINT",
+        "description": "Marine - Epipelagic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#1781ac",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Mesopelagic",
+        "styleType": "POINT",
+        "description": "Marine - Mesopelagic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0e516c",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Bathypelagic",
+        "styleType": "POINT",
+        "description": "Marine - Bathypelagic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#083040",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Abyssopelagic",
+        "styleType": "POINT",
+        "description": "Marine - Abyssopelagic",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#021015",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Deep Ocean Floor",
+        "styleType": "POINT",
+        "description": "Marine - Deep Ocean Floor",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#7fcdff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Continental Slope/Bathyl zone",
+        "styleType": "POINT",
+        "description": "Marine - Continental Slope/Bathyl zone",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#1199d1",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Abyssal Plain",
+        "styleType": "POINT",
+        "description": "Marine - Abyssal Plain",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#60bde3",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Abyssal Mountains/Hills",
+        "styleType": "POINT",
+        "description": "Marine - Abyssal Mountains/Hills",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#1a91c2",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Hadal/Deep Sea Trench",
+        "styleType": "POINT",
+        "description": "Marine - Hadal/Deep Sea Trench",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#027495",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Seamounts",
+        "styleType": "POINT",
+        "description": "Marine - Seamounts",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#6baed6",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Deep Sea Vent",
+        "styleType": "POINT",
+        "description": "Marine - Deep Sea Vent",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#7f00ff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Intertidal",
+        "styleType": "POINT",
+        "description": "Marine - Intertidal",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#4ce6e6",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Tidepools",
+        "styleType": "POINT",
+        "description": "Marine - Tidepools",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#3212b3",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Marine - Mangroves submerged Roots",
+        "styleType": "POINT",
+        "description": "Marine - Mangroves submerged Roots",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#7cd9cc",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Artificial - Terrestrial",
+        "styleType": "POINT",
+        "description": "Artificial - Terrestrial",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#d95049",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Arable land",
+        "styleType": "POINT",
+        "description": "Arable land",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffa083",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Pastureland",
+        "styleType": "POINT",
+        "description": "Pastureland",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ff83ca",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Plantations",
+        "styleType": "POINT",
+        "description": "Plantations",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ff0800",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Rural Gardens",
+        "styleType": "POINT",
+        "description": "Rural Gardens",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ddcb25",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Urban Areas",
+        "styleType": "POINT",
+        "description": "Urban Areas",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Subtropical/Tropical Heavily Degraded Former Forest",
+        "styleType": "POINT",
+        "description": "Subtropical/Tropical Heavily Degraded Former Forest",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ff1601",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Unknown",
+        "styleType": "POINT",
+        "description": "Unknown",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffffff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "^WMS_BioDiv:CGLC_.*",
+    "styles": [
+      {
+        "styleId": "No input data available",
+        "styleType": "POINT",
+        "description": "No input data available",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#282828",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Shrubs",
+        "styleType": "POINT",
+        "description": "Shrubs",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffbb22",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Herbaceous vegetation",
+        "styleType": "POINT",
+        "description": "Herbaceous vegetation",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ffff4c",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Cultivated and managed vegetation/agriculture (cropland)",
+        "styleType": "POINT",
+        "description": "Cultivated and managed vegetation/agriculture (cropland)",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#f096ff",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Urban / built up",
+        "styleType": "POINT",
+        "description": "Urban / built up",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#fa0000",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Bare / sparse vegetation",
+        "styleType": "POINT",
+        "description": "Bare / sparse vegetation",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#b4b4b4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Snow and Ice",
+        "styleType": "POINT",
+        "description": "Snow and Ice",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#f0f0f0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Permanent water bodies",
+        "styleType": "POINT",
+        "description": "Permanent water bodies",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0032c8",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Herbaceous wetland",
+        "styleType": "POINT",
+        "description": "Herbaceous wetland",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0096a0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Moss and lichen",
+        "styleType": "POINT",
+        "description": "Moss and lichen",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#fae6a0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, evergreen needle leaf",
+        "styleType": "POINT",
+        "description": "Closed forest, evergreen needle leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#58481f",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, evergreen, broad leaf",
+        "styleType": "POINT",
+        "description": "Closed forest, evergreen, broad leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#009900",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, deciduous needle leaf",
+        "styleType": "POINT",
+        "description": "Closed forest, deciduous needle leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#70663e",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, deciduous broad leaf",
+        "styleType": "POINT",
+        "description": "Closed forest, deciduous broad leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00cc00",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, mixed",
+        "styleType": "POINT",
+        "description": "Closed forest, mixed",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#4e751f",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Closed forest, unknown",
+        "styleType": "POINT",
+        "description": "Closed forest, unknown",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#007800",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, evergreen needle leaf",
+        "styleType": "POINT",
+        "description": "Open forest, evergreen needle leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#666000",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, evergreen broad leaf",
+        "styleType": "POINT",
+        "description": "Open forest, evergreen broad leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#8db400",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, deciduous needle leaf",
+        "styleType": "POINT",
+        "description": "Open forest, deciduous needle leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#8d7400",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, deciduous broad leaf",
+        "styleType": "POINT",
+        "description": "Open forest, deciduous broad leaf",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#a0dc00",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, mixed",
+        "styleType": "POINT",
+        "description": "Open forest, mixed",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#929900",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open forest, unknown",
+        "styleType": "POINT",
+        "description": "Open forest, unknown",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#648c00",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Open sea",
+        "styleType": "POINT",
+        "description": "Open sea",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000080",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "WMS_BioDiv:GCH",
+    "styles": [
+      {
+        "styleId": "Likely",
+        "styleType": "POINT",
+        "description": "Likely",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#AC52C4",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "Potential",
+        "styleType": "POINT",
+        "description": "Potential",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#EE52C5",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144036.200.json
+<> 2025-06-10T135919.200.json
+
+###

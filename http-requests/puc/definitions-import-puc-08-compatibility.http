@@ -1,0 +1,354 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,compatibility
+Content-Type: application/json
+
+[
+  {
+    "classIds": "MANHOLE,CL_MANHOLE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "MANHOLE_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "UCNINO",
+        "styleType": "POINT",
+        "description": "UCNINO",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/100-pozzetto.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "UCNINO",
+        "criteria": [
+          {
+            "ruleRef": "UCNINO",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "TRENCH,CL_CAVIDOTTO",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "TRENCH_TEMPLATE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "weight": 6,
+        "dashArray": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 6,
+        "dashArray": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 6,
+        "dashArray": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "CL_STRUCTURE_NODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "CL_STRUCTURE_NODE_TEMPLATE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#000000",
+        "weight": 5
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#FFFFFF",
+        "weight": 5
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "GAM-ACTIVITY",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "GAM-ACTIVITY_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/activity-marker.svg",
+        "color": "#FFF30A"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/activity-marker.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/activity-marker.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "GAM-ACTIVITY",
+        "styleType": "POINT",
+        "description": "GAM-ACTIVITY",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/activity-marker.svg",
+        "color": "#FFF30A"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "15",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "17",
+            "fieldType": "number",
+            "operator": "<=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "24",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "17",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144215.200.json
+<> 2025-06-10T135752.200.json
+<> 2025-06-10T125324.200.json
+
+###

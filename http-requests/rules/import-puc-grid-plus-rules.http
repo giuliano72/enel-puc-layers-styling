@@ -1,0 +1,65 @@
+POST http://192.168.1.2:8080/rules/import?layerGroup=PUC&environment=GRID
+Content-Type: application/json
+
+[
+  {
+    "value": "PLANNED-COMPLETED",
+    "criteria": [
+      {
+        "field": "properties.state",
+        "value": "39,41,43",
+        "fieldType": "number",
+        "operator": "IS_NOT_CONTAINED",
+        "criteriaOperator": "AND"
+      },
+      {
+        "field": "properties.external_container_id",
+        "value": "planned",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      },
+      {
+        "field": "properties.completed",
+        "value": "true",
+        "fieldType": "boolean",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "PLANNED-NOT-COMPLETED",
+    "criteria": [
+      {
+        "field": "properties.state",
+        "value": "39,41,43",
+        "fieldType": "number",
+        "operator": "IS_NOT_CONTAINED",
+        "criteriaOperator": "AND"
+      },
+      {
+        "field": "properties.external_container_id",
+        "value": "planned",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      },
+      {
+        "field": "properties.completed",
+        "value": "false",
+        "fieldType": "boolean",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144321.200.json
+<> 2025-06-10T143919.200.json
+<> 2025-06-10T135648.200.json
+<> 2025-06-10T121602.200.json
+<> 2025-06-10T120842.200.json
+
+###

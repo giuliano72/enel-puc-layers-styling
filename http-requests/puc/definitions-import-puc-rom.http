@@ -1,0 +1,749 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&country=ROM&tags=puc,rom
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HNODE7,CL_AT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "HVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSTATION2,CL_MT_NODE_2",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MLVAFP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVAFP-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVAFP-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE7,CL_MT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "MVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODET,CL_BT_NODE_T",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVCLAC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE7,CL_BT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVCLDP-40",
+        "styleType": "POINT",
+        "description": "LVCLDP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE8,CL_BT_NODE_G",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "ELLVBCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "ELLVLCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE0",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LLVBCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LLVLCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSEGMENT,LLINE,CL_BT_LINE_SEGMENT,CL_BT_LINE",
+    "existingStyleOverrideMode": "UPDATE_REPLACE_CRITERIA_MODE",
+    "styles": [
+      {
+        "styleId": "LVLSAB-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVLSAB-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVABCL-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVABCL-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCCL-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCCL-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSAN-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-1",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-2",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-1",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-2",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.phase",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSTATION9,CL_BT_TRANSFORMERS",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LLVTNO-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "SUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "XVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUC-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUW-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUO-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUC-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUW-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUO-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUP-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "FASTENING",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "CNFAST-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "INFRAARM",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "CNINFS-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144248.200.json
+<> 2025-06-10T135813.200.json
+<> 2025-06-10T125348.200.json
+
+###

@@ -1,0 +1,233 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,maintenance
+Content-Type: application/json
+
+[
+  {
+    "classIds": "GAM-ISSUE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "GAM-ISSUE_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/issue-marker-medium-selected.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/issue-marker-medium-selected.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/issue-marker-medium-selected.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "GAM-ISSUE",
+        "styleType": "POINT",
+        "description": "GAM-ISSUE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/issue-marker-medium-selected.svg",
+        "color": "#FF0000"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "15",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": "<=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "24",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "GAM-SMARTTICKET",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "GAM-SMARTTICKET_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/st-marker-medium-selected.svg",
+        "color": "#0000FF"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/st-marker-medium-selected.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/st-marker-medium-selected.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "GAM-SMARTTICKET",
+        "styleType": "POINT",
+        "description": "GAM-SMARTTICKET",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/MAINTENANCE/st-marker-medium-selected.svg",
+        "color": "#0000FF"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "15",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": "<=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "24",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144229.200.json
+<> 2025-06-10T135756.200.json
+<> 2025-06-10T125334.200.json
+
+###

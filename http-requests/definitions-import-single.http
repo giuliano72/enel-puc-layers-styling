@@ -1,0 +1,24 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HNODE0",
+    "styles": [],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-09T160754.200.json
+<> 2025-06-09T160344.400.txt
+<> 2025-06-09T160032.400.txt
+<> 2025-06-09T155922.400.txt
+<> 2025-06-09T155830.400.txt
+<> 2025-06-09T155807.400.txt
+
+
+###

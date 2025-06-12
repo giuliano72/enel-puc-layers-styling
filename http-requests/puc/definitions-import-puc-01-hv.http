@@ -1,0 +1,4554 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,hv
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HNODE0",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HNODE0_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-38",
+        "styleType": "POINT",
+        "description": "HVCACN-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-39",
+        "styleType": "POINT",
+        "description": "HVCACN-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-40",
+        "styleType": "POINT",
+        "description": "HVCACN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-41",
+        "styleType": "POINT",
+        "description": "HVCACN-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-42",
+        "styleType": "POINT",
+        "description": "HVCACN-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-43",
+        "styleType": "POINT",
+        "description": "HVCACN-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVCACN-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HSTATION1,CL_AT_NODE,STATION1",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HSTATION1_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS01-38",
+        "styleType": "POINT",
+        "description": "HVPS01-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#A52A2A",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS01-39",
+        "styleType": "POINT",
+        "description": "HVPS01-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FFFF00",
+        "zIndexOffset": 1000
+      },
+
+      {
+        "styleId": "HVPS01-40",
+        "styleType": "POINT",
+        "description": "HVPS01-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FF0000",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS01-41",
+        "styleType": "POINT",
+        "description": "HVPS01-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#7030A0",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS01-42",
+        "styleType": "POINT",
+        "description": "HVPS01-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#A52A2A",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS01-43",
+        "styleType": "POINT",
+        "description": "HVPS01-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FFFF00",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVPS01-38",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-39",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-40",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-41",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-42",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-43",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "20",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.code + ' - ' + context.feature.properties.description",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+' - '+translate.instant(context.feature.properties.description)+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "MSTATION1",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "MSTATION1_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-38",
+        "styleType": "POINT",
+        "description": "HVPS04-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-39",
+        "styleType": "POINT",
+        "description": "HVPS04-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-40",
+        "styleType": "POINT",
+        "description": "HVPS04-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-41",
+        "styleType": "POINT",
+        "description": "HVPS04-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-42",
+        "styleType": "POINT",
+        "description": "HVPS04-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVPS04-43",
+        "styleType": "POINT",
+        "description": "HVPS04-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVPS04-38",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-39",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-40",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-41",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-42",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-43",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "20",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.code + ' - ' + context.feature.properties.description",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "11",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+' - '+translate.instant(context.feature.properties.description)+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HBAY3,CL_AT_NODE_3",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HBAY3_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-38",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-39",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-40",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-41",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-42",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSW-43",
+        "styleType": "POINT",
+        "description": "HVANSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-38",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-39",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-40",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-41",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-42",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a20",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANIN-43",
+        "styleType": "POINT",
+        "description": "HVANIN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVANSW-38",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSW-39",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSW-40",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSW-41",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSW-42",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSW-43",
+        "criteria": [
+          {
+            "ruleRef": "HVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-38",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-39",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-40",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-41",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-42",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANIN-43",
+        "criteria": [
+          {
+            "ruleRef": "HVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HNODE4,CL_AT_NODE_4",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HNODE4_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-38",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-39",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-40",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-41",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-42",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTNO-43",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVNTNO-38",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTNO-39",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTNO-40",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTNO-41",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTNO-42",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTNO-43",
+        "criteria": [
+          {
+            "ruleRef": "HVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "19",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HNODEG",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HNODEG_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-38",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-39",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-40",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-41",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-42",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTJC-43",
+        "styleType": "POINT",
+        "description": "HVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVNTJC-38",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTJC-39",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTJC-40",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTJC-41",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTJC-42",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTJC-43",
+        "criteria": [
+          {
+            "ruleRef": "HVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "19",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HNODE8",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HNODE8_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-38",
+        "styleType": "POINT",
+        "description": "HVNTST-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-39",
+        "styleType": "POINT",
+        "description": "HVNTST-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-40",
+        "styleType": "POINT",
+        "description": "HVNTST-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-41",
+        "styleType": "POINT",
+        "description": "HVNTST-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-42",
+        "styleType": "POINT",
+        "description": "HVNTST-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVNTST-43",
+        "styleType": "POINT",
+        "description": "HVNTST-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVNTST-38",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTST-39",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTST-40",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTST-41",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTST-42",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVNTST-43",
+        "criteria": [
+          {
+            "ruleRef": "HVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HNODE7,CL_AT_NODE_7",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HNODE7_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-38",
+        "styleType": "POINT",
+        "description": "HVCLDP-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-39",
+        "styleType": "POINT",
+        "description": "HVCLDP-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-40",
+        "styleType": "POINT",
+        "description": "HVCLDP-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "red",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-41",
+        "styleType": "POINT",
+        "description": "HVCLDP-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-42",
+        "styleType": "POINT",
+        "description": "HVCLDP-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCLDP-43",
+        "styleType": "POINT",
+        "description": "HVCLDP-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-38",
+        "styleType": "POINT",
+        "description": "HVCDPC-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-39",
+        "styleType": "POINT",
+        "description": "HVCDPC-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-40",
+        "styleType": "POINT",
+        "description": "HVCDPC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "red",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-41",
+        "styleType": "POINT",
+        "description": "HVCDPC-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-42",
+        "styleType": "POINT",
+        "description": "HVCDPC-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPC-43",
+        "styleType": "POINT",
+        "description": "HVCDPC-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-38",
+        "styleType": "POINT",
+        "description": "HVCDPG-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-39",
+        "styleType": "POINT",
+        "description": "HVCDPG-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-40",
+        "styleType": "POINT",
+        "description": "HVCDPG-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "red",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-41",
+        "styleType": "POINT",
+        "description": "HVCDPG-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-42",
+        "styleType": "POINT",
+        "description": "HVCDPG-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPG-43",
+        "styleType": "POINT",
+        "description": "HVCDPG-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-38",
+        "styleType": "POINT",
+        "description": "HVCDPT-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-39",
+        "styleType": "POINT",
+        "description": "HVCDPT-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-40",
+        "styleType": "POINT",
+        "description": "HVCDPT-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "red",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-41",
+        "styleType": "POINT",
+        "description": "HVCDPT-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-42",
+        "styleType": "POINT",
+        "description": "HVCDPT-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPT-43",
+        "styleType": "POINT",
+        "description": "HVCDPT-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-38",
+        "styleType": "POINT",
+        "description": "HVCDPD-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-39",
+        "styleType": "POINT",
+        "description": "HVCDPD-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-40",
+        "styleType": "POINT",
+        "description": "HVCDPD-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "red",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-41",
+        "styleType": "POINT",
+        "description": "HVCDPD-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-42",
+        "styleType": "POINT",
+        "description": "HVCDPD-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCDPD-43",
+        "styleType": "POINT",
+        "description": "HVCDPD-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVCLDP-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCLDP-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCLDP-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCLDP-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCLDP-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCLDP-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPC-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPG-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPT-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-38",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-39",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-40",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-41",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-42",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCDPD-43",
+        "criteria": [
+          {
+            "ruleRef": "HVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "19",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.external.borderCod",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "18",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HSEGMENT,CL_AT_LINE,CL_AT_LINE_SEGMENT,HLINE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "HSEGMENT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-38",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-39",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-1",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-2",
+        "styleType": "LINE",
+        "description": "HVLSAN-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-3",
+        "styleType": "LINE",
+        "description": "HVLSAN-3",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#006400",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-4",
+        "styleType": "LINE",
+        "description": "HVLSAN-4",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00FFFF",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-5",
+        "styleType": "LINE",
+        "description": "HVLSAN-5",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#4B0082",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-6",
+        "styleType": "LINE",
+        "description": "HVLSAN-6",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-41",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-42",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAN-43",
+        "styleType": "LINE",
+        "description": "HVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "HVLSAC-38",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-39",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-1",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-2",
+        "styleType": "LINE",
+        "description": "HVLSAC-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-3",
+        "styleType": "LINE",
+        "description": "HVLSAC-3",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#006400",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-4",
+        "styleType": "LINE",
+        "description": "HVLSAC-4",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00FFFF",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-5",
+        "styleType": "LINE",
+        "description": "HVLSAC-5",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#4B0082",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-6",
+        "styleType": "LINE",
+        "description": "HVLSAC-6",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-41",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-42",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSAC-43",
+        "styleType": "LINE",
+        "description": "HVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "HVLSUC-38",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-39",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-1",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-2",
+        "styleType": "LINE",
+        "description": "HVLSUC-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF8C00",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-3",
+        "styleType": "LINE",
+        "description": "HVLSUC-3",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#006400",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-4",
+        "styleType": "LINE",
+        "description": "HVLSUC-4",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00FFFF",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-5",
+        "styleType": "LINE",
+        "description": "HVLSUC-5",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#4B0082",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-6",
+        "styleType": "LINE",
+        "description": "HVLSUC-6",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-41",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-42",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "4,4"
+      },
+      {
+        "styleId": "HVLSUC-43",
+        "styleType": "LINE",
+        "description": "HVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "4,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVLSAN-38",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-39",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-1",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-2",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-3",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-4",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-5",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-6",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-41",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-42",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAN-43",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-38",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-39",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-1",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-2",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-3",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-4",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-5",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-6",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-41",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-42",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSAC-43",
+        "criteria": [
+          {
+            "ruleRef": "HVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-38",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-39",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-1",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-2",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "51",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-3",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "67",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-4",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "111",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-5",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "133",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-6",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "221",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-41",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-42",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVLSUC-43",
+        "criteria": [
+          {
+            "ruleRef": "HVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HSTATION1PG",
+    "styles": [
+      {
+        "styleId": "HSTATION1PG_TEMPLATE",
+        "styleType": "POINT",
+        "description": "HSTATION1PG",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HSTATION1PG",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POLYGON",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 1,
+        "fillColor": "$environment.pucStylingNotMappedFeatureColor",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      },
+      {
+        "styleId": "HSTATION1PG",
+        "styleType": "POLYGON",
+        "description": "HSTATION1PG",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "",
+        "color": "#FF0000",
+        "weight": 1,
+        "fillColor": "#FF0000",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HBORDER",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HBORDER_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FF0000",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-38",
+        "styleType": "POINT",
+        "description": "HSTBRD-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-39",
+        "styleType": "POINT",
+        "description": "HSTBRD-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-40",
+        "styleType": "POINT",
+        "description": "HSTBRD-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#D288FF",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-41",
+        "styleType": "POINT",
+        "description": "HSTBRD-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-42",
+        "styleType": "POINT",
+        "description": "HSTBRD-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HSTBRD-43",
+        "styleType": "POINT",
+        "description": "HSTBRD-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-standard.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-38",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-39",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-40",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#01FFFA",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-41",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-42",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HRIBRD-43",
+        "styleType": "POINT",
+        "description": "HRIBRD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/BORDERS/f-ring.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HSTBRD-39",
+        "criteria": [
+          {
+            "ruleRef": "HSTBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HSTBRD-40",
+        "criteria": [
+          {
+            "ruleRef": "HSTBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HSTBRD-41",
+        "criteria": [
+          {
+            "ruleRef": "HSTBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HSTBRD-42",
+        "criteria": [
+          {
+            "ruleRef": "HSTBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HSTBRD-43",
+        "criteria": [
+          {
+            "ruleRef": "HSTBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-38",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-39",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-40",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-41",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-42",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HRIBRD-43",
+        "criteria": [
+          {
+            "ruleRef": "HRIBRD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "18",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "19",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "13",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144147.200.json
+<> 2025-06-10T135720.200.json
+<> 2025-06-10T125247.200.json
+<> 2025-06-10T111104.200.json
+<> 2025-06-09T195431.200.json
+
+###

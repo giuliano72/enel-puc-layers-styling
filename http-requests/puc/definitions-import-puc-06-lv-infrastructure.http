@@ -1,0 +1,2029 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,lv,infrastructure
+Content-Type: application/json
+
+[
+  {
+    "classIds": "LSUPPORT",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LSUPPORT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#000000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-83",
+        "styleType": "POINT",
+        "description": "LVANSU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-84",
+        "styleType": "POINT",
+        "description": "LVANSU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-85",
+        "styleType": "POINT",
+        "description": "LVANSU-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-86",
+        "styleType": "POINT",
+        "description": "LVANSU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-87",
+        "styleType": "POINT",
+        "description": "LVANSU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVANSU-88",
+        "styleType": "POINT",
+        "description": "LVANSU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-83",
+        "styleType": "POINT",
+        "description": "LVASUC-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-84",
+        "styleType": "POINT",
+        "description": "LVASUC-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-85",
+        "styleType": "POINT",
+        "description": "LVASUC-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-86",
+        "styleType": "POINT",
+        "description": "LVASUC-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-87",
+        "styleType": "POINT",
+        "description": "LVASUC-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUC-88",
+        "styleType": "POINT",
+        "description": "LVASUC-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-2.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-83",
+        "styleType": "POINT",
+        "description": "LVASUW-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-84",
+        "styleType": "POINT",
+        "description": "LVASUW-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-85",
+        "styleType": "POINT",
+        "description": "LVASUW-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-86",
+        "styleType": "POINT",
+        "description": "LVASUW-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-87",
+        "styleType": "POINT",
+        "description": "LVASUW-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUW-88",
+        "styleType": "POINT",
+        "description": "LVASUW-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-1.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-83",
+        "styleType": "POINT",
+        "description": "LVASUO-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-84",
+        "styleType": "POINT",
+        "description": "LVASUO-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-85",
+        "styleType": "POINT",
+        "description": "LVASUO-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-86",
+        "styleType": "POINT",
+        "description": "LVASUO-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-87",
+        "styleType": "POINT",
+        "description": "LVASUO-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUO-88",
+        "styleType": "POINT",
+        "description": "LVASUO-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-3.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-83",
+        "styleType": "POINT",
+        "description": "LVASUP-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-84",
+        "styleType": "POINT",
+        "description": "LVASUP-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-85",
+        "styleType": "POINT",
+        "description": "LVASUP-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-86",
+        "styleType": "POINT",
+        "description": "LVASUP-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-87",
+        "styleType": "POINT",
+        "description": "LVASUP-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVASUP-88",
+        "styleType": "POINT",
+        "description": "LVASUP-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-4.svg",
+        "zIndexOffset": null
+      },
+
+      {
+        "styleId": "LVSPNM-83",
+        "styleType": "POINT",
+        "description": "LVSPNM-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVSPNM-84",
+        "styleType": "POINT",
+        "description": "LVSPNM-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVSPNM-85",
+        "styleType": "POINT",
+        "description": "LVSPNM-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVSPNM-86",
+        "styleType": "POINT",
+        "description": "LVSPNM-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVSPNM-87",
+        "styleType": "POINT",
+        "description": "LVSPNM-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LVSPNM-88",
+        "styleType": "POINT",
+        "description": "LVSPNM-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      }
+
+    ],
+    "styleRules": [
+      {
+        "value": "LVANSU-83",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVANSU-84",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVANSU-85",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVANSU-86",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVANSU-87",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVANSU-88",
+        "criteria": [
+          {
+            "ruleRef": "LVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-83",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-84",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-85",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-86",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-87",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUC-88",
+        "criteria": [
+          {
+            "ruleRef": "LVASUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-83",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-84",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-85",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-86",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-87",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUW-88",
+        "criteria": [
+          {
+            "ruleRef": "LVASUW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-83",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-84",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-85",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-86",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-87",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUO-88",
+        "criteria": [
+          {
+            "ruleRef": "LVASUO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-83",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-84",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-85",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-86",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-87",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVASUP-88",
+        "criteria": [
+          {
+            "ruleRef": "LVASUP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+
+      {
+        "value": "LVSPNM-83",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVSPNM-84",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVSPNM-85",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVSPNM-86",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVSPNM-87",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVSPNM-88",
+        "criteria": [
+          {
+            "ruleRef": "LVSPNM",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "17",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.code",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "18",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "LMANHOLE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LMANHOLE_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-83",
+        "styleType": "POINT",
+        "description": "LUCNIN-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-84",
+        "styleType": "POINT",
+        "description": "LUCNIN-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-85",
+        "styleType": "POINT",
+        "description": "LUCNIN-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-86",
+        "styleType": "POINT",
+        "description": "LUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-87",
+        "styleType": "POINT",
+        "description": "LUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "LUCNIN-88",
+        "styleType": "POINT",
+        "description": "LUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-bt.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LUCNIN-83",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LUCNIN-84",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LUCNIN-85",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LUCNIN-86",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LUCNIN-87",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LUCNIN-88",
+        "criteria": [
+          {
+            "ruleRef": "LUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "25",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "LTRENCH",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LTRENCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-83",
+        "styleType": "LINE",
+        "description": "LVUCIA-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-84",
+        "styleType": "LINE",
+        "description": "LVUCIA-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-85",
+        "styleType": "LINE",
+        "description": "LVUCIA-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#bcbbbb",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-86",
+        "styleType": "LINE",
+        "description": "LVUCIA-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-87",
+        "styleType": "LINE",
+        "description": "LVUCIA-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIA-88",
+        "styleType": "LINE",
+        "description": "LVUCIA-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-83",
+        "styleType": "LINE",
+        "description": "LVUCIU-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-84",
+        "styleType": "LINE",
+        "description": "LVUCIU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-85",
+        "styleType": "LINE",
+        "description": "LVUCIU-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-86",
+        "styleType": "LINE",
+        "description": "LVUCIU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-87",
+        "styleType": "LINE",
+        "description": "LVUCIU-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIU-88",
+        "styleType": "LINE",
+        "description": "LVUCIU-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "LVUCIG-83",
+        "styleType": "LINE",
+        "description": "LVUCIG-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LVUCIG-84",
+        "styleType": "LINE",
+        "description": "LVUCIG-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LVUCIG-85",
+        "styleType": "LINE",
+        "description": "LVUCIG-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0a0a0a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LVUCIG-86",
+        "styleType": "LINE",
+        "description": "LVUCIG-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LVUCIG-87",
+        "styleType": "LINE",
+        "description": "LVUCIG-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LVUCIG-88",
+        "styleType": "LINE",
+        "description": "LVUCIG-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "LLVUCI-83",
+        "styleType": "LINE",
+        "description": "LLVUCI-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "LLVUCI-84",
+        "styleType": "LINE",
+        "description": "LLVUCI-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "LLVUCI-85",
+        "styleType": "LINE",
+        "description": "LLVUCI-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#131313",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "LLVUCI-86",
+        "styleType": "LINE",
+        "description": "LLVUCI-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "LLVUCI-87",
+        "styleType": "LINE",
+        "description": "LLVUCI-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "LLVUCI-88",
+        "styleType": "LINE",
+        "description": "LLVUCI-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVUCIA-83",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIA-84",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIA-85",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIA-86",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIA-87",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIA-88",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-83",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-84",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-85",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-86",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-87",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIU-88",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-83",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-84",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-85",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-86",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-87",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCIG-88",
+        "criteria": [
+          {
+            "ruleRef": "LVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-83",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-84",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-85",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-86",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-87",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVUCI-88",
+        "criteria": [
+          {
+            "ruleRef": "LLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144207.200.json
+<> 2025-06-10T135743.200.json
+<> 2025-06-10T125313.200.json
+<> 2025-06-09T195516.200.json
+
+###

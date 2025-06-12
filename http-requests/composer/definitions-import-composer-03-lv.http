@@ -1,0 +1,2719 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=COMPOSER&tags=composer,lv
+Content-Type: application/json
+
+[
+  {
+    "classIds": "LVUCSW",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVUCSW_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },{
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVUCSW",
+        "styleType": "POINT",
+        "description": "LVUCSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg"
+      },
+      {
+        "styleId": "LVUCSW-editMode",
+        "styleType": "POINT",
+        "description": "LVUCSW-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg"
+      },
+      {
+        "styleId": "LVUCSW-dismantled",
+        "styleType": "POINT",
+        "description": "LVUCSW-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg"
+      },
+      {
+        "styleId": "LVUCSW-outOfService",
+        "styleType": "POINT",
+        "description": "LVUCSW-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/sezionamento-BT.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVUCSW-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCSW-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCSW-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCSW",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVAESW",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVAESW_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVAESW",
+        "styleType": "POINT",
+        "description": "LVAESW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg"
+      },
+      {
+        "styleId": "LVAESW-editMode",
+        "styleType": "POINT",
+        "description": "LVAESW-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg"
+      },
+      {
+        "styleId": "LVAESW-dismantled",
+        "styleType": "POINT",
+        "description": "LVAESW-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg"
+      },
+      {
+        "styleId": "LVAESW-outOfService",
+        "styleType": "POINT",
+        "description": "LVAESW-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Armario.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVAESW-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVAESW-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVAESW-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVAESW",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCASW",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCASW_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCASW",
+        "styleType": "POINT",
+        "description": "LVCASW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg"
+      },
+      {
+        "styleId": "LVCASW-editMode",
+        "styleType": "POINT",
+        "description": "LVUCSW-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg"
+      },
+      {
+        "styleId": "LVCASW-dismantled",
+        "styleType": "POINT",
+        "description": "LVCASW-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg"
+      },
+      {
+        "styleId": "LVCASW-outOfService",
+        "styleType": "POINT",
+        "description": "LVCASW-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Seccionador.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCASW-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCASW-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCASW-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCASW",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVFUSW",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVFUSW_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVFUSW",
+        "styleType": "POINT",
+        "description": "LVFUSW",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg"
+      },
+      {
+        "styleId": "LVFUSW-editMode",
+        "styleType": "POINT",
+        "description": "LVFUSW-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg"
+      },
+      {
+        "styleId": "LVFUSW-dismantled",
+        "styleType": "POINT",
+        "description": "LVFUSW-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg"
+      },
+      {
+        "styleId": "LVFUSW-outOfService",
+        "styleType": "POINT",
+        "description": "LVFUSW-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_5/Fusibile.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVFUSW-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVFUSW-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVFUSW-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVFUSW",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVNTNO",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVNTNO_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVNTNO",
+        "styleType": "POINT",
+        "description": "LVNTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg"
+      },
+      {
+        "styleId": "LVNTNO-editMode",
+        "styleType": "POINT",
+        "description": "LVNTNO-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg"
+      },
+      {
+        "styleId": "LVNTNO-dismantled",
+        "styleType": "POINT",
+        "description": "LVNTNO-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg"
+      },
+      {
+        "styleId": "LVNTNO-outOfService",
+        "styleType": "POINT",
+        "description": "LVNTNO-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_6/nodo-rigido-BT.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVNTNO-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTNO-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTNO-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTNO",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVNTJC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVNTJC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVNTJC",
+        "styleType": "POINT",
+        "description": "LVNTJC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg"
+      },
+      {
+        "styleId": "LVNTJC-editMode",
+        "styleType": "POINT",
+        "description": "LVNTJC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg"
+      },
+      {
+        "styleId": "LVNTJC-dismantled",
+        "styleType": "POINT",
+        "description": "LVNTJC-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg"
+      },
+      {
+        "styleId": "LVNTJC-outOfService",
+        "styleType": "POINT",
+        "description": "LVNTJC-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVNTJC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTJC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTJC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTJC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCLDP",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCLDP_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCLDP",
+        "styleType": "POINT",
+        "description": "LVCLDP",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      },
+      {
+        "styleId": "LVCLDP-editMode",
+        "styleType": "POINT",
+        "description": "LVCLDP-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      },
+      {
+        "styleId": "LVCLDP-dismantled",
+        "styleType": "POINT",
+        "description": "LVCLDP-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      },
+      {
+        "styleId": "LVCLDP-outOfService",
+        "styleType": "POINT",
+        "description": "LVCLDP-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCLDP-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLDP-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLDP-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLDP",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCDPC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCDPC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCDPC",
+        "styleType": "POINT",
+        "description": "LVCACN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPC-editMode",
+        "styleType": "POINT",
+        "description": "LVCDPC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPC-dismantled",
+        "styleType": "POINT",
+        "description": "LVCDPC-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPC-outOfService",
+        "styleType": "POINT",
+        "description": "LVCDPC-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/consumo.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCDPC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCDPG",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCDPG_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCDPG",
+        "styleType": "POINT",
+        "description": "LVCDPG",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPG-editMode",
+        "styleType": "POINT",
+        "description": "LVCDPG-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPG-dismantled",
+        "styleType": "POINT",
+        "description": "LVCDPG-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPG-outOfService",
+        "styleType": "POINT",
+        "description": "LVCDPG-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/generazione.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCDPG-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPG-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPG-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPG",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCDPT",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCDPT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCDPT",
+        "styleType": "POINT",
+        "description": "LVCACN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPT-editMode",
+        "styleType": "POINT",
+        "description": "LVCDPT-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPT-dismantled",
+        "styleType": "POINT",
+        "description": "LVCDPT-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPT-outOfService",
+        "styleType": "POINT",
+        "description": "LVCDPT-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCDPT-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPT-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPT-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPT",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCDPD",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCDPD_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCDPD",
+        "styleType": "POINT",
+        "description": "LVCDPD",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPD-editMode",
+        "styleType": "POINT",
+        "description": "LVCDPD-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPD-dismantled",
+        "styleType": "POINT",
+        "description": "LVCDPD-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCDPD-outOfService",
+        "styleType": "POINT",
+        "description": "LVCDPD-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/Distribuzione.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCDPD-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPD-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPD-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCDPD",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "20",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVNTST",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVNTST_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVNTST",
+        "styleType": "POINT",
+        "description": "LVNTST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVNTST-editMode",
+        "styleType": "POINT",
+        "description": "LVNTST-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVNTST-dismantled",
+        "styleType": "POINT",
+        "description": "LVNTST-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVNTST-outOfService",
+        "styleType": "POINT",
+        "description": "LVNTST-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVNTST-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTST-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTST-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVNTST",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "22",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "10",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "23",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "10",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "24",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCACN",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCACN_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2,
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2,
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCACN",
+        "styleType": "POINT",
+        "description": "LVCACN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCACN-editMode",
+        "styleType": "POINT",
+        "description": "LVCACN-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCACN-dismantled",
+        "styleType": "POINT",
+        "description": "LVCACN-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2
+      },
+      {
+        "styleId": "LVCACN-outOfService",
+        "styleType": "POINT",
+        "description": "LVCACN-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCACN-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCACN-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCACN-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCACN",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVLSAN",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVLSAN_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2
+      },
+      {
+        "styleId": "LVLSAN",
+        "styleType": "LINE",
+        "description": "LVLSAN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2
+      },
+      {
+        "styleId": "LVLSAN-editMode",
+        "styleType": "LINE",
+        "description": "LVLSAN-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2
+      },
+      {
+        "styleId": "LVLSAN-dismantled",
+        "styleType": "LINE",
+        "description": "LVLSAN-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2
+      },
+      {
+        "styleId": "LVLSAN-outOfService",
+        "styleType": "LINE",
+        "description": "LVLSAN-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSAN-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVLSAC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVLSAC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC",
+        "styleType": "LINE",
+        "description": "LVLSAC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-editMode",
+        "styleType": "LINE",
+        "description": "LVLSAC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-dismantled",
+        "styleType": "LINE",
+        "description": "LVLSAC-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-outOfService",
+        "styleType": "LINE",
+        "description": "LVLSAC-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSAC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVLSAB",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVLSAB_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB",
+        "styleType": "LINE",
+        "description": "LVLSAB",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-editMode",
+        "styleType": "LINE",
+        "description": "LVLSAB-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-dismantled",
+        "styleType": "LINE",
+        "description": "LVLSAB-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-outOfService",
+        "styleType": "LINE",
+        "description": "LVLSAB-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSAB-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVLSUC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVLSUC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC",
+        "styleType": "LINE",
+        "description": "LVLSUC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-editMode",
+        "styleType": "LINE",
+        "description": "LVLSUC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-dismantled",
+        "styleType": "LINE",
+        "description": "LVLSUC-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-outOfService",
+        "styleType": "LINE",
+        "description": "LVLSUC-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSUC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVABCL",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVABCL_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL",
+        "styleType": "LINE",
+        "description": "LVABCL",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-editMode",
+        "styleType": "LINE",
+        "description": "LVABCL-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-dismantled",
+        "styleType": "LINE",
+        "description": "LVABCL-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-outOfService",
+        "styleType": "LINE",
+        "description": "LVABCL-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVABCL-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVUCCL",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LVUCCL_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FF0000",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/LINE/line.svg",
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL",
+        "styleType": "LINE",
+        "description": "LVUCCL",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-editMode",
+        "styleType": "LINE",
+        "description": "LVUCCL-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-dismantled",
+        "styleType": "LINE",
+        "description": "LVUCCL-dismantled",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-outOfService",
+        "styleType": "LINE",
+        "description": "LVUCCL-outOfService",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "weight": 2,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVUCCL-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LLVTNO",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LLVTNO_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LLVTNO",
+        "styleType": "POINT",
+        "description": "LLVTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LLVTNO-dismantled",
+        "styleType": "POINT",
+        "description": "LLVTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LLVTNO-outOfService",
+        "styleType": "POINT",
+        "description": "LLVTNO",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LLVTNO-editMode",
+        "styleType": "POINT",
+        "description": "LLVTNO-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LLVTNO-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVTNO-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVTNO-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LLVTNO",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LBOOST",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LBOOST_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LBOOST",
+        "styleType": "POINT",
+        "description": "LBOOST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LBOOST-dismantled",
+        "styleType": "POINT",
+        "description": "LBOOST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LBOOST-outOfService",
+        "styleType": "POINT",
+        "description": "LBOOST",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      },
+      {
+        "styleId": "LBOOST-editMode",
+        "styleType": "POINT",
+        "description": "LBOOST-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_TRANSFORMERS/trafo-BT.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LBOOST-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LBOOST-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LBOOST-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LBOOST",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LVCLAC",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "LVCLAC_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "classTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg",
+        "color": "#FF0000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          { "name": "searchClassTemplate", "value": "true" }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "LVCLAC",
+        "styleType": "POINT",
+        "description": "LVCLAC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg"
+      },
+      {
+        "styleId": "LVCLAC-dismantled",
+        "styleType": "POINT",
+        "description": "LVCLAC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "yellow",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg"
+      },
+      {
+        "styleId": "LVCLAC-outOfService",
+        "styleType": "POINT",
+        "description": "LVCLAC",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "violet",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg"
+      },
+      {
+        "styleId": "LVCLAC-editMode",
+        "styleType": "POINT",
+        "description": "LVCLAC-editMode",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#999999",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_T/square.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVCLAC-editMode",
+        "criteria": [
+          {
+            "field": "properties.editMode",
+            "value": "true",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLAC-dismantled",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLAC-outOfService",
+        "criteria": [
+          {
+            "field": "properties.objectFormStatusIdPrefix",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVCLAC",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+context.feature.properties.pucId+' '+translate.instant(context.feature.properties.objectCode)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p><p class=\"tooltip-line\"> '+translate.instant(context.feature.properties.status)+'</p><p class=\"tooltip-line\"> '+translate.instant('LV Grid')+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144106.200.json
+<> 2025-06-10T135851.200.json
+
+###

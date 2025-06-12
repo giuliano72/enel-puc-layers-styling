@@ -1,0 +1,1665 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&environment=GRID&tags=puc,grid
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HNODE0",
+    "styles": [
+      {
+        "styleId": "HVCACN-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVCACN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVCACN-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVCACN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVCACN-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVCACN-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HSTATION1,CL_AT_NODE,STATION1",
+    "styles": [
+      {
+        "styleId": "HVPS01-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVPS01-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#FF1493",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS01-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVPS01-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "color": "#00E1FF",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVPS01-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS01-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVPS01",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSTATION1",
+    "styles": [
+      {
+        "styleId": "HVPS04-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVPS04-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "HVPS04-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "HVPS04-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_AT_NODE/cabina-primaria.svg",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules":[
+      {
+        "value": "HVPS04-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVPS04-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "HVPS04",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSTATION2,CL_MT_NODE_2",
+    "styles": [
+      {
+        "styleId": "MLVPTS-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVPTS-PTP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/PTP-small.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTPS-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVPTS-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTRE-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVTRE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/regulator.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MVCDPS-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPS-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria-DPS.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MVDSCO-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVDSCO-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria-UT-cabina-utente.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTSE-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVTSE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/Centro de Seccionamiento.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVAFP-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVAFP-COMPLETED",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/punto-alimentazione-alternativo.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVPTS-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVPTS-PTP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/PTP-small.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTPS-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVPTS-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTRE-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVTRE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/regulator.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MVCDPS-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPS-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria-DPS.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MVDSCO-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVDSCO-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/cabina-secondaria-UT-cabina-utente.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVTSE-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVTSE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/Centro de Seccionamiento.svg",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "MLVAFP-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MLVAFP-NOT-COMPLETED",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/punto-alimentazione-alternativo.svg",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MLVPTS-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVPTS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTPS-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTPS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTRE-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTRE",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPS-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVDSCO-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVDSCO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTSE-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTSE",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVAFP-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVAFP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVPTS-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVPTS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTPS-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTPS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTRE-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTRE",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPS-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVDSCO-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVDSCO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVTSE-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVTSE",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MLVAFP-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MLVAFP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.code + ' - ' + context.feature.properties.description",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "16",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MBAY3,CL_MT_NODE_3",
+    "styles": [
+      {
+        "styleId": "MVANSW-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANSW",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANIN-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANIN",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANIS-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANIS",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore-Sezionatore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANFU-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANFU",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Fusibile.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANSW-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANSW",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/sezionatore-mt-blk-fill_S.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANIN-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANIN",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANIS-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANIS",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Interruttore-Sezionatore.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVANFU-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVANFU",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/Fusibile.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVANSW-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANIN-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANIS-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANIS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANFU-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANFU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANSW-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANSW",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANIN-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANIS-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANIS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVANFU-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVANFU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE4,CL_MT_NODE_4",
+    "styles": [
+      {
+        "styleId": "MVNTNO-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTNO",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVNTNO-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTNO",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_3_4/nodo-rigido-MT.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVNTNO-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVNTNO-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTNO",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODEG,CL_MT_NODE_G_ALL",
+    "styles": [
+      {
+        "styleId": "MVNTJC-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTJC-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVNTJC-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTJC-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/nodo-G.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVNTJC-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVNTJC-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTJC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE0",
+    "styles": [
+      {
+        "styleId": "MVCACN-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCACN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "color": "#FF1493",
+        "weight": 2
+      },
+      {
+        "styleId": "MVCACN-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCACN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MONTANTI_MT/square-fe.svg",
+        "color": "#00E1FF",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVCACN-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCACN-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCACN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSEGMENT,MLINE,CL_MT_LINESEGMENT_ALL,CL_MT_LINE",
+    "styles": [
+      {
+        "styleId": "MVLSAN-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSAN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "MVLSAC-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSAC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "MVLSUC-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSUC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "weight": 2,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "MVLSAN-NOT-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSAN-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "weight": 2,
+        "dashArray": null
+      },
+      {
+        "styleId": "MVLSAC-NOT-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSAC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "weight": 2,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "MVLSUC-NOT-COMPLETED",
+        "styleType": "LINE",
+        "description": "MVLSUC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "weight": 2,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVLSAN-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVLSAC-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVLSUC-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVLSAN-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVLSAC-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVLSUC-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE8",
+    "styles": [
+      {
+        "styleId": "MVNTST-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTST-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "color": "#FF1493",
+        "weight": 2
+      },
+      {
+        "styleId": "MVNTST-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVNTST-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_G/circle.svg",
+        "color": "#00E1FF",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVNTST-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVNTST-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVNTST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE7,CL_MT_NODE_7",
+    "styles": [
+      {
+        "styleId": "MVCLDP-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCLDP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPC-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPG-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPG-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPT-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPD-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPD-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCLDP-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCLDP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPC-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPC-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPG-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPG-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP603.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPT-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPT-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP604.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "MVCDPD-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCDPD-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP605.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVCLDP-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPC-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPG-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPD-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCLDP-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCLDP",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPC-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPG-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPT-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPT",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCDPD-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCDPD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODET,CL_MT_NODE_T_ALL",
+    "styles": [
+      {
+        "styleId": "MVCLAC-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCLAC-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#FF1493",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_T_ALL/square.svg"
+      },
+      {
+        "styleId": "MVCLAC-NOT-COMPLETED",
+        "styleType": "POINT",
+        "description": "MVCLAC-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00E1FF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_T_ALL/square.svg"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "MVCLAC-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCLAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "MVCLAC-NOT-COMPLETED",
+        "criteria": [
+          {
+            "ruleRef": "MVCLAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "ruleRef": "PLANNED-NOT-COMPLETED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144133.200.json
+<> 2025-06-10T135832.200.json
+
+###

@@ -1,0 +1,1390 @@
+POST http://192.168.1.2:8080/rules/import?layerGroup=PUC
+Content-Type: application/json
+
+[
+  {
+    "value": "HVCACN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCACN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCACN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCACN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCACN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCACN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LLVBCN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LLVBCN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LLVLCN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LLVLCN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVPS01",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVPS01",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVPS04",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVPS04",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVTPS",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVTPS",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVTRE",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVTRE",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCDPS",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCDPS",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVDSCO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVDSCO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVTSE",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVTSE",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVAFP",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVAFP",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVPTS",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVPTS",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVANSW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVANSW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVANIN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVANIN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVANSW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVANSW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVANIN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVANIN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVANIS",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVANIS",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVANFU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVANFU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVNTNO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVNTNO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVNTJC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVNTJC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVNTNO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVNTNO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVUCSW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVUCSW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVAESW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVAESW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCASW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCASW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVFUSW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVFUSW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVNTNO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVNTNO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVNTNE",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVNTNE",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCLDP",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCLDP",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCDPC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCDPC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCDPG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCDPG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCDPT",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCDPT",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCDPD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCDPD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCLDP",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCLDP",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCDPC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCDPC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCDPG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCDPG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCDPT",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCDPT",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCDPD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCDPD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVCLDP",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCLDP",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVCDPG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCDPG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVCDPC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCDPC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVCDPT",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCDPT",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVCDPD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVCDPD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVNTST",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVNTST",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVNTST",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVNTST",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVNTST",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVNTST",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "ELLVBCN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "ELLVBCN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "ELLVLCN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "ELLVLCN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LLVTNO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LLVTNO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVNTJC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVNTJC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVNTJC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVNTJC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVCLAC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVCLAC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVCLAC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVCLAC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVLSAN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVLSAN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "HVLSAC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVLSAC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "HVLSUC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVLSUC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "MVLSAN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVLSAN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "MVLSAC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVLSAC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+  {
+    "value": "MVLSUC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVLSUC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVLSAN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVLSAN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVLSAC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVLSAC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVLSAB",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVLSAB",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVLSUC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVLSUC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVABCL",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVABCL",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVUCCL",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVUCCL",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "XVANSU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "XVANSU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVANSU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVANSU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVANSU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVANSU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVASUC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVASUC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVASUW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVASUW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVASUO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVASUO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVSPNM",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVSPNM",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVANSU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVANSU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVASUC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVASUC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVASUW",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVASUW",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVASUO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVASUO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVASUP",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVASUP",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVSPNM",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVSPNM",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HUCNIN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HUCNIN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MUCNIN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MUCNIN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+
+  {
+    "value": "UCNINO",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "UCNINO",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LUCNIN",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LUCNIN",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVUCIA",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVUCIA",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVUCIU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVUCIU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HVUCIG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HVUCIG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HLVUCI",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HLVUCI",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVUCIA",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVUCIA",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVUCIU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVUCIU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MVUCIG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MVUCIG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MLVUCI",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MLVUCI",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVUCIA",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVUCIA",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVUCIU",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVUCIU",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVUCIG",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVUCIG",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LLVUCI",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LLVUCI",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "STRNOD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "STRNOD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LVDPCC",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LVDPCC",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "CNFAST",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "CNFAST",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "CNINFS",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "CNINFS",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HSTBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HSTBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "HRIBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "HRIBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MSTBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MSTBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "MRIBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "MRIBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LSTBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LSTBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "LRIBRD",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "LRIBRD",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  },
+
+  {
+    "value": "NOTMAPPED",
+    "criteria": [
+      {
+        "field": "properties.external.puc_style",
+        "value": "NOTMAPPED",
+        "fieldType": "string",
+        "operator": "=",
+        "criteriaOperator": "AND"
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144331.200.json
+<> 2025-06-10T143855.200.json
+<> 2025-06-10T143216.200.json
+<> 2025-06-10T142916.200.json
+<> 2025-06-10T141658.400.txt
+<> 2025-06-10T141644.200.json
+<> 2025-06-10T135642.200.json
+<> 2025-06-10T121552.200.json
+<> 2025-06-10T120557.200.json
+
+###

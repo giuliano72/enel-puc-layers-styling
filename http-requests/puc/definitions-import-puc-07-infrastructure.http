@@ -1,0 +1,1099 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,infrastructure
+Content-Type: application/json
+
+[
+  {
+    "classIds": "SUPPORT",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "SUPPORT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#000000",
+        "weight": 5
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "color": "#FFFFFF",
+        "weight": 5
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-83",
+        "styleType": "POINT",
+        "description": "XVANSU-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-84",
+        "styleType": "POINT",
+        "description": "XVANSU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-85",
+        "styleType": "POINT",
+        "description": "XVANSU-85",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-86",
+        "styleType": "POINT",
+        "description": "XVANSU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-87",
+        "styleType": "POINT",
+        "description": "XVANSU-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "XVANSU-88",
+        "styleType": "POINT",
+        "description": "XVANSU-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "XVANSU-83",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-84",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-85",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-86",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-87",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "XVANSU-88",
+        "criteria": [
+          {
+            "ruleRef": "XVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "23",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "STREETNUM",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "STREETNUM_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "STRNOD",
+        "styleType": "POINT",
+        "description": "STRNOD",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "STRNOD-39",
+        "styleType": "POINT",
+        "description": "STRNOD-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STREETNUM/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "STRNOD-39",
+        "criteria": [
+          {
+            "ruleRef": "STRNOD",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "4",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.description",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "18",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.description+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "INFRAARM",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "INFRAARM_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#00B4D3",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-83",
+        "styleType": "LINE",
+        "description": "CNINFS-83",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-84",
+        "styleType": "LINE",
+        "description": "CNINFS-84",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-85",
+        "styleType": "LINE",
+        "description": "CNINFS-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B4D3",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-86",
+        "styleType": "LINE",
+        "description": "CNINFS-86",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-87",
+        "styleType": "LINE",
+        "description": "CNINFS-87",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "CNINFS-88",
+        "styleType": "LINE",
+        "description": "CNINFS-88",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "CNINFS-83",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNINFS-84",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNINFS-85",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNINFS-86",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNINFS-87",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNINFS-88",
+        "criteria": [
+          {
+            "ruleRef": "CNINFS",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "STREETNUMCNODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "STREETNUMCNODE_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-38",
+        "styleType": "LINE",
+        "description": "LVDPCC-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-39",
+        "styleType": "LINE",
+        "description": "LVDPCC-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-40",
+        "styleType": "LINE",
+        "description": "LVDPCC-40",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-41",
+        "styleType": "LINE",
+        "description": "LVDPCC-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-42",
+        "styleType": "LINE",
+        "description": "LVDPCC-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVDPCC-43",
+        "styleType": "LINE",
+        "description": "LVDPCC-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 0.5,
+        "dashArray": "5,4,1,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVDPCC-38",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-39",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-40",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-41",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-42",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVDPCC-43",
+        "criteria": [
+          {
+            "ruleRef": "LVDPCC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "FASTENING",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "FASTENING_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#00B4D3",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-38",
+        "styleType": "POINT",
+        "description": "CNFAST-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-39",
+        "styleType": "POINT",
+        "description": "CNFAST-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-40",
+        "styleType": "POINT",
+        "description": "CNFAST-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B4D3",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-41",
+        "styleType": "POINT",
+        "description": "CNFAST-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030a0",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-42",
+        "styleType": "POINT",
+        "description": "CNFAST-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "CNFAST-43",
+        "styleType": "POINT",
+        "description": "CNFAST-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/POINT/circle.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "CNFAST-38",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-39",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-40",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-41",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-42",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-43",
+        "criteria": [
+          {
+            "ruleRef": "CNFAST",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "CNFAST-40",
+        "criteria": []
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": [
+            "context.feature.properties.code"
+          ]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144211.200.json
+<> 2025-06-10T135747.200.json
+<> 2025-06-10T125318.200.json
+<> 2025-06-10T090925.200.json
+<> 2025-06-10T090127.400.txt
+<> 2025-06-10T085552.400.txt
+<> 2025-06-09T195520.400.txt
+
+###

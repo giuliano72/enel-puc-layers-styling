@@ -1,0 +1,47 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=ATENA&tags=atena
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HVLSAN",
+    "styles": [
+      {
+        "styleId": "HVLSAN",
+        "styleType": "LINE",
+        "description": "HVLSAN",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ff0000",
+        "weight": 2
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVLSAN",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.id+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.id"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144045.200.json
+
+###

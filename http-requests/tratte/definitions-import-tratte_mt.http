@@ -1,0 +1,129 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&environment=ROUTE_MT&tags=puc,tratte,hv,mv,lv
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HV-ROUTES",
+    "styles": [
+      {
+        "styleId": "HV-ROUTES",
+        "styleType": "LINE",
+        "description": "HV-ROUTES",
+
+        "color": "red",
+        "weight": 4,
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/PTP-small.svg"
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.classId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.description+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.description", "context.feature.properties.description"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "MV-ROUTES",
+    "styles": [
+      {
+        "styleId": "MV-ROUTES",
+        "styleType": "LINE",
+        "description": "MV-ROUTES",
+
+        "color": "#FF7800",
+        "weight": 4,
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/PTP-small.svg"
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.classId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.description+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.description", "context.feature.properties.description"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "LV-ROUTES",
+    "styles": [
+      {
+        "styleId": "LV-ROUTES",
+        "styleType": "LINE",
+        "description": "LV-ROUTES",
+
+        "color": "green",
+        "weight": 4,
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MT_NODE_2/PTP-small.svg"
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.classId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.description+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.description", "context.feature.properties.description"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144312.200.json
+
+###

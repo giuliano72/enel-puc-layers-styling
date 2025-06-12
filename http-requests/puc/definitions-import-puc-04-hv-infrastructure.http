@@ -1,0 +1,1221 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&tags=puc,hv,infrastructure
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HSUPPORT",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HSUPPORT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "color": "#000000"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-83",
+        "styleType": "POINT",
+        "description": "HVANSU-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-84",
+        "styleType": "POINT",
+        "description": "HVANSU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-85",
+        "styleType": "POINT",
+        "description": "HVANSU-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-86",
+        "styleType": "POINT",
+        "description": "HVANSU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-87",
+        "styleType": "POINT",
+        "description": "HVANSU-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HVANSU-88",
+        "styleType": "POINT",
+        "description": "HVANSU-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_STRUCTURE_NODE/sostegno-AT.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVANSU-83",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSU-84",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSU-85",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSU-86",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSU-87",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVANSU-88",
+        "criteria": [
+          {
+            "ruleRef": "HVANSU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "27",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.feature.properties.code",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "8",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HMANHOLE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "HMANHOLE_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "POINT",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-83",
+        "styleType": "POINT",
+        "description": "HUCNIN-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-84",
+        "styleType": "POINT",
+        "description": "HUCNIN-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-85",
+        "styleType": "POINT",
+        "description": "HUCNIN-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-86",
+        "styleType": "POINT",
+        "description": "HUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-87",
+        "styleType": "POINT",
+        "description": "HUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "HUCNIN-88",
+        "styleType": "POINT",
+        "description": "HUCNIN-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_MANHOLE/pozzetto-at.svg",
+        "zIndexOffset": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HUCNIN-83",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HUCNIN-84",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HUCNIN-85",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HUCNIN-86",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HUCNIN-87",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HUCNIN-88",
+        "criteria": [
+          {
+            "ruleRef": "HUCNIN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "25",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "HTRENCH",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "HTRENCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#000000",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "NOTMAPPED",
+        "styleType": "LINE",
+        "description": "NOTMAPPED",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "$environment.pucStylingNotMappedFeatureColor",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-83",
+        "styleType": "LINE",
+        "description": "HVUCIA-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-84",
+        "styleType": "LINE",
+        "description": "HVUCIA-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-85",
+        "styleType": "LINE",
+        "description": "HVUCIA-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#deb042",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-86",
+        "styleType": "LINE",
+        "description": "HVUCIA-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-87",
+        "styleType": "LINE",
+        "description": "HVUCIA-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIA-88",
+        "styleType": "LINE",
+        "description": "HVUCIA-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-83",
+        "styleType": "LINE",
+        "description": "HVUCIU-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-84",
+        "styleType": "LINE",
+        "description": "HVUCIU-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-85",
+        "styleType": "LINE",
+        "description": "HVUCIU-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#006400",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-86",
+        "styleType": "LINE",
+        "description": "HVUCIU-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-87",
+        "styleType": "LINE",
+        "description": "HVUCIU-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIU-88",
+        "styleType": "LINE",
+        "description": "HVUCIU-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 2,
+        "dashArray": "6,3"
+      },
+      {
+        "styleId": "HVUCIG-83",
+        "styleType": "LINE",
+        "description": "HVUCIG-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HVUCIG-84",
+        "styleType": "LINE",
+        "description": "HVUCIG-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HVUCIG-85",
+        "styleType": "LINE",
+        "description": "HVUCIG-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#0a0a0a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HVUCIG-86",
+        "styleType": "LINE",
+        "description": "HVUCIG-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HVUCIG-87",
+        "styleType": "LINE",
+        "description": "HVUCIG-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HVUCIG-88",
+        "styleType": "LINE",
+        "description": "HVUCIG-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": "10,2"
+      },
+      {
+        "styleId": "HLVUCI-83",
+        "styleType": "LINE",
+        "description": "HLVUCI-83",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "HLVUCI-84",
+        "styleType": "LINE",
+        "description": "HLVUCI-84",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "HLVUCI-85",
+        "styleType": "LINE",
+        "description": "HLVUCI-85",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#585858",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "HLVUCI-86",
+        "styleType": "LINE",
+        "description": "HLVUCI-86",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "HLVUCI-87",
+        "styleType": "LINE",
+        "description": "HLVUCI-87",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": null
+      },
+      {
+        "styleId": "HLVUCI-88",
+        "styleType": "LINE",
+        "description": "HLVUCI-88",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#ffff00",
+        "weight": 4,
+        "dashArray": null
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "HVUCIA-83",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIA-84",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIA-85",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIA-86",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIA-87",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIA-88",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIA",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-83",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-84",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-85",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-86",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-87",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIU-88",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIU",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-83",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-84",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-85",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-86",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-87",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HVUCIG-88",
+        "criteria": [
+          {
+            "ruleRef": "HVUCIG",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-83",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "83",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-84",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "84",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-85",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "85",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-86",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "86",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-87",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "87",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "HLVUCI-88",
+        "criteria": [
+          {
+            "ruleRef": "HLVUCI",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "88",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "NOTMAPPED",
+        "criteria": [
+          {
+            "ruleRef": "NOTMAPPED",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "'<strong>'+translate.instant(context.styleId)+'</strong><p class=\"tooltip-line\">'+context.feature.properties.code+'</p>'",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.styleId",
+          "subTitles": ["context.feature.properties.code"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144158.200.json
+<> 2025-06-10T135734.200.json
+<> 2025-06-10T125303.200.json
+<> 2025-06-09T195508.200.json
+
+###

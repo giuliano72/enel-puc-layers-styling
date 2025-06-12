@@ -1,0 +1,2080 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&country=ITA&tags=puc,ita
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HBAY3,CL_AT_NODE_3",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVANSW-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVANIN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HNODE4,CL_AT_NODE_4",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVNTNO-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HNODEG",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVNTJC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HNODE7,CL_AT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVCDPC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVCDPG-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVCDPT-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVCDPD-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSTATION2,CL_MT_NODE_2",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MLVTRE-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVTSE-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MBAY3,CL_MT_NODE_3",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVANIN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANIN-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANIN-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANIS-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANIS-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANIS-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANFU-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANFU-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVANFU-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE7,CL_MT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPC-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPC-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPG-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPG-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPG-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPT-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPT-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPD-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPD-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCDPD-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LBAY5,CL_BT_NODE_5",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVAESW-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVCASW-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVFUSW-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE7,CL_BT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-passivo.svg"
+      },
+      {
+        "styleId": "LVCLDP-40",
+        "styleType": "POINT",
+        "description": "LVCLDP-40",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "styleId": "LVCDPC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVCDPG-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVCDPT-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVCDPD-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "SUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "XVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUC-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUW-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVASUO-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUC-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUW-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUO-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVASUP-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HTRENCH",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVUCIA-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVUCIU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HVUCIG-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "HLVUCI-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MTRENCH",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVUCIA-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVUCIU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVUCIG-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVUCI-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LTRENCH",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVUCIA-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCIU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCIG-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "FASTENING",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "CNFAST-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "INFRAARM",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "CNINFS-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSEGMENT,LLINE,CL_BT_LINE_SEGMENT,CL_BT_LINE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "LSEGMENT_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "color": "#FFFFFF",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-38",
+        "styleType": "LINE",
+        "description": "LVLSAN-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-39",
+        "styleType": "LINE",
+        "description": "LVLSAN-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-1",
+        "styleType": "LINE",
+        "description": "LVLSAN-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-2",
+        "styleType": "LINE",
+        "description": "LVLSAN-2",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-41",
+        "styleType": "LINE",
+        "description": "LVLSAN-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-42",
+        "styleType": "LINE",
+        "description": "LVLSAN-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAN-43",
+        "styleType": "LINE",
+        "description": "LVLSAN-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": null
+      },
+      {
+        "styleId": "LVLSAC-38",
+        "styleType": "LINE",
+        "description": "LVLSAC-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-39",
+        "styleType": "LINE",
+        "description": "LVLSAC-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-1",
+        "styleType": "LINE",
+        "description": "LVLSAC-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-2",
+        "styleType": "LINE",
+        "description": "LVLSAC-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-41",
+        "styleType": "LINE",
+        "description": "LVLSAC-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-42",
+        "styleType": "LINE",
+        "description": "LVLSAC-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAC-43",
+        "styleType": "LINE",
+        "description": "LVLSAC-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-38",
+        "styleType": "LINE",
+        "description": "LVLSAB-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-39",
+        "styleType": "LINE",
+        "description": "LVLSAB-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-1",
+        "styleType": "LINE",
+        "description": "LVLSAB-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-2",
+        "styleType": "LINE",
+        "description": "LVLSAB-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-41",
+        "styleType": "LINE",
+        "description": "LVLSAB-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-42",
+        "styleType": "LINE",
+        "description": "LVLSAB-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSAB-43",
+        "styleType": "LINE",
+        "description": "LVLSAB-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVLSUC-38",
+        "styleType": "LINE",
+        "description": "LVLSUC-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-39",
+        "styleType": "LINE",
+        "description": "LVLSUC-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-1",
+        "styleType": "LINE",
+        "description": "LVLSUC-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-2",
+        "styleType": "LINE",
+        "description": "LVLSUC-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-41",
+        "styleType": "LINE",
+        "description": "LVLSUC-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-42",
+        "styleType": "LINE",
+        "description": "LVLSUC-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVLSUC-43",
+        "styleType": "LINE",
+        "description": "LVLSUC-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVABCL-38",
+        "styleType": "LINE",
+        "description": "LVABCL-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-39",
+        "styleType": "LINE",
+        "description": "LVABCL-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-1",
+        "styleType": "LINE",
+        "description": "LVABCL-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-2",
+        "styleType": "LINE",
+        "description": "LVABCL-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-41",
+        "styleType": "LINE",
+        "description": "LVABCL-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-42",
+        "styleType": "LINE",
+        "description": "LVABCL-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVABCL-43",
+        "styleType": "LINE",
+        "description": "LVABCL-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "5,4,1,4"
+      },
+      {
+        "styleId": "LVUCCL-38",
+        "styleType": "LINE",
+        "description": "LVUCCL-38",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-39",
+        "styleType": "LINE",
+        "description": "LVUCCL-39",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-1",
+        "styleType": "LINE",
+        "description": "LVUCCL-1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-2",
+        "styleType": "LINE",
+        "description": "LVUCCL-2",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#00B050",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-41",
+        "styleType": "LINE",
+        "description": "LVUCCL-41",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#7030A0",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-42",
+        "styleType": "LINE",
+        "description": "LVUCCL-42",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#A52A2A",
+        "weight": 1,
+        "dashArray": "10,4"
+      },
+      {
+        "styleId": "LVUCCL-43",
+        "styleType": "LINE",
+        "description": "LVUCCL-43",
+        "defaultStyle": false,
+        "attributes": [],
+        "color": "#FFFF00",
+        "weight": 1,
+        "dashArray": "10,4"
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "LVLSAN-38",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-39",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-41",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-42",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAN-43",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAN",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-38",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-39",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-41",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-42",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAC-43",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-38",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-39",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-41",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-42",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSAB-43",
+        "criteria": [
+          {
+            "ruleRef": "LVLSAB",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-38",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-39",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-1",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-2",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-41",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-42",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVLSUC-43",
+        "criteria": [
+          {
+            "ruleRef": "LVLSUC",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-38",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-39",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-1",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-2",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-41",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-42",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVABCL-43",
+        "criteria": [
+          {
+            "ruleRef": "LVABCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-38",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "38",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-39",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "39",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-1",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-2",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "40",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.external.vNominal",
+            "value": "0.30",
+            "fieldType": "number",
+            "operator": "<",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-41",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "41",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-42",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "42",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "LVUCCL-43",
+        "criteria": [
+          {
+            "ruleRef": "LVUCCL",
+            "criteriaOperator": "AND"
+          },
+          {
+            "field": "properties.state",
+            "value": "43",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144243.200.json
+<> 2025-06-10T135809.200.json
+<> 2025-06-10T125345.200.json
+
+###

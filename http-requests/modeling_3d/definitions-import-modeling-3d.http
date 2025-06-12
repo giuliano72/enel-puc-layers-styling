@@ -1,0 +1,1588 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=MODELING_3D&tags=modeling_3d
+Content-Type: application/json
+
+[
+  {
+    "classIds": "primaryStationZone,E3D_VEC_PCD-CAB1",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "primaryStationZone",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          },
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#f032e6"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POLYGON",
+        "description": "primaryStationZone",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#f032e6",
+        "opacity": 1,
+        "weight": 3,
+        "fillColor": "#f032e6",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.primaryStationZoneTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "photo360,E3D_VEC_360,E3D_360",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "photo360",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          },
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FF0000",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "photo360",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FF0000",
+        "zIndexOffset": 1100
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "12",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.photo360TooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.photo360MenuHeaderData(context.feature, context)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "secondaryStationZone,E3D_VEC_PCD-CAB2",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "secondaryStationZone",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          },
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#f58231"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POLYGON",
+        "description": "secondaryStationZone",
+        "defaultStyle": true,
+        "attributes": [],
+        "color": "#f58231",
+        "opacity": 1,
+        "weight": 3,
+        "fillColor": "#f58231",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.secondaryStationZoneTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "lineZone,E3D_VEC_PCD-LINE,E3D_PCD",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "lineZone",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          },
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#0000FF"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#0000FF"
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POLYGON",
+        "description": "Zona",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "",
+        "color": "#0000FF",
+        "weight": 3,
+        "fillColor": "#0000FF",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.lineZoneTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "catenaries,E3D_VEC_NETWORKEL_CATENARIES",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "LINE",
+        "description": "catenaries",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          },
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/line.svg",
+        "color": "#000000",
+        "weight": 3
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "LINE",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/line.svg",
+        "color": "#FFFFFF",
+        "weight": 3
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "LINE",
+        "description": "E3D_VEC_NETWORKEL_CATENARIES",
+        "defaultStyle": true,
+        "attributes": [],
+        "iconUrl": "assets/app/img/map-markers/commons/line.svg",
+        "color": "#000000",
+        "weight": 3
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.catenariesTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementLineName(context.classId, context.feature) + ' - ' + context.modeling3dDefinitionService.getElementSourceId(context.classId, context.feature) + ' | ' + context.modeling3dDefinitionService.getElementTargetId(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "supports,E3D_VEC_NETWORKEL_SUPPORTS",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "supports",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#008000",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "supports",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#008000",
+        "zIndexOffset": 799
+      },
+      {
+        "styleId": "heelingLevel-1",
+        "styleType": "POINT",
+        "description": "supports (heelingLevel-1)",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#E34234",
+        "zIndexOffset": 800
+      },
+      {
+        "styleId": "heelingLevel-2",
+        "styleType": "POINT",
+        "description": "supports (heelingLevel-2)",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#FF5607",
+        "zIndexOffset": 800
+      },
+      {
+        "styleId": "heelingLevel-3",
+        "styleType": "POINT",
+        "description": "supports (heelingLevel-3)",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#FF9800",
+        "zIndexOffset": 800
+      },
+      {
+        "styleId": "cabin",
+        "styleType": "POINT",
+        "description": "cabin",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#008000",
+        "zIndexOffset": 800
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "heelingLevel-1",
+        "criteria": [
+          {
+            "field": "properties.properties.heelingLevel",
+            "value": "1",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "heelingLevel-2",
+        "criteria": [
+          {
+            "field": "properties.properties.heelingLevel",
+            "value": "2",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "heelingLevel-3",
+        "criteria": [
+          {
+            "field": "properties.properties.heelingLevel",
+            "value": "3",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "cabin",
+        "criteria": [
+          {
+            "field": "properties.properties.type",
+            "value": "3",
+            "fieldType": "number",
+            "operator": ">=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [
+      {
+        "value": "context.modeling3dDefinitionService.getElementLineName(context.classId, context.feature) + ' - ' + context.modeling3dDefinitionService.getElementCode(context.classId, context.feature)",
+        "criteria": [
+          {
+            "field": "actualZoom",
+            "value": "17",
+            "fieldType": "number",
+            "operator": ">",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "tooltipRules": [
+      {
+        "value": "context.supportsTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementLineName(context.classId, context.feature) + ' - ' + context.modeling3dDefinitionService.getElementCode(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "supportsNoCluster",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "supportsNoCluster",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#90EE90",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "supportsNoCluster",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#90EE90",
+        "zIndexOffset": 900
+      },
+      {
+        "styleId": "type-3",
+        "styleType": "POINT",
+        "description": "cabin no cluster",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/3d-modeling/square.svg",
+        "color": "#90EE90",
+        "zIndexOffset": 900
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "type-3",
+        "criteria": [
+          {
+            "field": "properties.properties.type",
+            "value": "3",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.supportsNoClusterTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementLineName(context.classId, context.feature) + ' - ' + context.modeling3dDefinitionService.getElementCode(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "supportsNotValid",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "supportsNotValid",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#A9A9A9",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "supportsNotValid",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/circle.svg",
+        "color": "#A9A9A9",
+        "zIndexOffset": 1000
+      },
+      {
+        "styleId": "type-3",
+        "styleType": "POINT",
+        "description": "cabin not valid",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#A9A9A9",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "type-3",
+        "criteria": [
+          {
+            "field": "properties.properties.type",
+            "value": "3",
+            "fieldType": "number",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.supportsNotValidTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementLineName(context.classId, context.feature) + ' - ' + context.modeling3dDefinitionService.getElementCode(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "pointCloudissue",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "pointCloudissue",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#DC143C"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#FFFFFF"
+      },
+      {
+        "styleId": "pointCloudissue_polygon",
+        "styleType": "POLYGON",
+        "description": "pointCloudissue",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/ico-aree.svg",
+        "color": "#DC143C",
+        "weight": 3,
+        "fillColor": "#DC143C",
+        "fillOpacity": 0.1,
+        "fill": true,
+        "stroke": true,
+        "zIndexOffset": 1200
+      },
+      {
+        "styleId": "pointCloudissue_point",
+        "styleType": "POINT",
+        "description": "pointCloudissue",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/3d-modeling/empty-circle.svg",
+        "color": "#DC143C",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "pointCloudissue_polygon",
+        "criteria": [
+
+          {
+            "field": "feature.geometry.type",
+            "value": "Polygon",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      },
+      {
+        "value": "pointCloudissue_point",
+        "criteria": [
+
+          {
+            "field": "feature.geometry.type",
+            "value": "Point",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "24",
+        "criteria": [
+          {
+            "field": "feature.geometry.type",
+            "value": "Point",
+            "fieldType": "string",
+            "operator": "=",
+            "criteriaOperator": "AND"
+          }
+        ]
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.pointCloudissueTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["((context.modeling3dDefinitionService.getElementSwimCode(context.classId, context.feature)) ? context.modeling3dDefinitionService.getElementSwimCode(context.classId, context.feature) : '') + ((context.modeling3dDefinitionService.getElementSwimDescription(context.classId, context.feature)) ? ' - ' : '') + ((context.modeling3dDefinitionService.getElementSwimDescription(context.classId, context.feature)) ? context.modeling3dDefinitionService.getElementSwimDescription(context.classId, context.feature) : '')"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "imageIssue3D",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "imageIssue3D",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#DC143C",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "imageIssue3D",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "imageIssue3D",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#DC143C",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.imageIssue3DTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementSwimDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "imageIssue2D",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "imageIssue2D",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#DC143C",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "imageIssue2D",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#DC143C",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.imageIssue2DTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "issueLevel1,E3D_VEC_CRITICITA_LEV1",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "issueLevel1",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#ff0000",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "issueLevel1",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#ff0000",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.issueLevel1TooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementCode(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementCodeDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "issueLevel2,E3D_VEC_CRITICITA_LEV2",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "issueLevel2",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#ffff00",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "issueLevel2",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#ffff00",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.issueLevel2TooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementCode(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementCodeDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "issueNoLevel,E3D_VEC_CRITICITA_NOLEV",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "issueNoLevel_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "issueNoLevel",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.issueNoLevelTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementCode(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementCodeDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "issueLevel3,E3D_VEC_CRITICITA_LEV3",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "issueLevel3_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#a6d96a",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "issueLevel3",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#a6d96a",
+        "zIndexOffset": 1200
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "10",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.issueLevel3TooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementCode(context.classId, context.feature) + ' ' + context.modeling3dDefinitionService.getElementCodeDescription(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "photo,E3D_VEC_IMG,E3D_IMG",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "photo",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "E3D_IMG_STYLE",
+        "styleType": "POINT",
+        "description": "E3D_VEC_IMG",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": 1000
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "E3D_IMG_STYLE",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.photoTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "photoOdin,E3D_VEC_IMG_ODIN-CLASS",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "styleType": "POINT",
+        "description": "photoOdin",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "classTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#00cccc",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "styleType": "POINT",
+        "description": "SEARCH_TEMPLATE",
+        "defaultStyle": false,
+        "attributes": [
+          {
+            "name": "searchClassTemplate",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#FFFFFF",
+        "zIndexOffset": null
+      },
+      {
+        "styleId": "defaultStyle",
+        "styleType": "POINT",
+        "description": "photoOdin",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "iconUrl": "assets/app/img/map-markers/commons/square-border.svg",
+        "color": "#00cccc",
+        "zIndexOffset": 1100
+      }
+    ],
+    "styleRules": [
+      {
+        "value": "defaultStyle",
+        "criteria": []
+      }
+    ],
+    "sizeRules": [
+      {
+        "value": "16",
+        "criteria": []
+      }
+    ],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.photoOdinTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementName(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "classIds": "MSEGMENT_TREE_COVER_DENSITY",
+    "styles": [
+      {
+        "styleId": "MSEGMENT_TREE_COVER_DENSITY",
+        "styleType": "LINE",
+        "description": "MSEGMENT_TREE_COVER_DENSITY",
+        "defaultStyle": true,
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "true"
+          }
+        ],
+        "color": "#a52a2a",
+        "weight": 4,
+        "dashArray": "12,6"
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [
+      {
+        "value": "context.MSEGMENT_TREE_COVER_DENSITYTooltipContent(context.feature, context)",
+        "criteria": []
+      }
+    ],
+    "menuHeaderDataRules": [
+      {
+        "value": {
+          "headerClass": "",
+          "title": "context.classId",
+          "subTitles": ["context.modeling3dDefinitionService.getElementCode(context.classId, context.feature)"]
+        },
+        "criteria": []
+      }
+    ]
+  }
+]
+
+<> 2025-06-10T144140.200.json
+<> 2025-06-10T135824.200.json
+<> 2025-06-10T131250.200.json
+<> 2025-06-10T130921.200.json
+<> 2025-06-10T130627.400.txt
+<> 2025-06-10T125704.400.txt
+
+###

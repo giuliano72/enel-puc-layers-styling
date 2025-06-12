@@ -1,0 +1,462 @@
+POST http://192.168.1.2:8080/definitions/import?layerGroup=PUC&country=ESP&tags=puc,esp
+Content-Type: application/json
+
+[
+  {
+    "classIds": "HNODEG",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "HVNTJC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "HNODE7,CL_AT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "HVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MSTATION2,CL_MT_NODE_2",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MLVAFP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVAFP-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MLVAFP-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODEG,CL_MT_NODE_G_ALL",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVNTJC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVNTJC-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVNTJC-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODET,CL_MT_NODE_T_ALL",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "MVCLAC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLAC-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLAC-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "MNODE7,CL_MT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "SEARCH_TEMPLATE",
+        "iconUrl": "assets/app/img/map-markers/puc/CL_BT_NODE_7/nodo-consegna-BP606.svg"
+      },
+      {
+        "styleId": "MVCLDP-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedCompletedVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "MVCLDP-NOT-COMPLETED",
+        "attributes": [
+          {
+            "name": "layerBarPlannedNotCompletedVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE6,CL_BT_NODE_6",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVNTNE-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODEG",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVNTJC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODET,CL_BT_NODE_T",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVCLAC-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE7,CL_BT_NODE_7",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE8,CL_BT_NODE_G",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "ELLVBCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "ELLVLCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LNODE0",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LLVBCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LLVLCN-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSEGMENT,CL_BT_LINE_SEGMENT,CL_BT_LINE",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LVLSAB-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVLSAB-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVABCL-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVABCL-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCCL-1",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "styleId": "LVUCCL-2",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "LSTATION9,CL_BT_TRANSFORMERS",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "LLVTNO-40",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "SUPPORT",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [
+      {
+        "styleId": "XVANSU-85",
+        "attributes": [
+          {
+            "name": "layerBarVisible",
+            "value": "false"
+          }
+        ]
+      }
+    ],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  },
+  {
+    "classIds": "EMPTY",
+    "existingStyleOverrideMode": "UPDATE_MODE",
+    "styles": [],
+    "styleRules": [],
+    "sizeRules": [],
+    "labelRules": [],
+    "tooltipRules": [],
+    "menuHeaderDataRules": []
+  }
+]
+
+<> 2025-06-10T144238.200.json
+<> 2025-06-10T135803.200.json
+<> 2025-06-10T125339.200.json
+
+###
