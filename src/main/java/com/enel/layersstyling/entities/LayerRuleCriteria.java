@@ -18,6 +18,9 @@ public class LayerRuleCriteria {
     private Long id;
 
     @Column
+    private Integer listOrder;
+
+    @Column
     private String criteriaOperator; // 'AND' | 'OR'
 
 
@@ -25,6 +28,12 @@ public class LayerRuleCriteria {
 
     public LayerRuleCriteria(Map<String, Object> mapCriteria) {
         this.id = (Long) mapCriteria.get("id");
+
+        Object orderObject = mapCriteria.get("listOrder");
+        if (orderObject != null) {
+            this.listOrder = (Integer)orderObject;
+        }
+
         this.criteriaOperator = (String) mapCriteria.get("criteriaOperator");
     }
 

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.GenericGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +29,9 @@ public class LayerRule {
     @Column
     private Boolean linked;
 
+    @Column
+    private Integer listOrder;
+
     @Column(columnDefinition="TEXT")
     private String value;
 
@@ -53,6 +55,11 @@ public class LayerRule {
         this.environment = (String) mapLayerRule.get("environment");
         this.linked = (Boolean) mapLayerRule.get("linked");
 
+        Object orderObject = mapLayerRule.get("listOrder");
+        if (orderObject != null) {
+            this.listOrder = (Integer)orderObject;
+        }
+
         Object valueObject = mapLayerRule.get("value");
         if (valueObject != null) {
 
@@ -73,7 +80,27 @@ public class LayerRule {
         this.criteria = new ArrayList<>();
         ArrayList<Map<String, Object>> mapCriteriaList = (ArrayList<Map<String, Object>>) mapLayerRule.get("criteria");
         if (mapCriteriaList != null) {
-            mapCriteriaList.forEach(mapCriteria -> {
+
+            for (int idx = 0; idx < mapCriteriaList.size(); idx++) {
+                Map<String, Object> mapCriteria = mapCriteriaList.get(idx);
+                String ruleRef = (String) mapCriteria.get("ruleRef");
+                if (ruleRef != null) {
+                    LayerRuleRefCriteria layerRuleRefCriteria = new LayerRuleRefCriteria(mapCriteria);
+                    if (layerRuleRefCriteria.getListOrder() == null) {
+                        layerRuleRefCriteria.setListOrder(idx);
+                    }
+                    this.criteria.add(layerRuleRefCriteria);
+
+                } else {
+                    LayerRuleCriteriaImpl layerRuleCriteriaImpl = new LayerRuleCriteriaImpl(mapCriteria);
+                    if (layerRuleCriteriaImpl.getListOrder() == null) {
+                        layerRuleCriteriaImpl.setListOrder(idx);
+                    }
+                    this.criteria.add(layerRuleCriteriaImpl);
+                }
+            }
+
+            /*mapCriteriaList.forEach(mapCriteria -> {
 
                 String ruleRef = (String) mapCriteria.get("ruleRef");
                 if (ruleRef != null) {
@@ -82,7 +109,7 @@ public class LayerRule {
                 } else {
                     this.criteria.add(new LayerRuleCriteriaImpl(mapCriteria) );
                 }
-            });
+            });*/
         }
     }
 }

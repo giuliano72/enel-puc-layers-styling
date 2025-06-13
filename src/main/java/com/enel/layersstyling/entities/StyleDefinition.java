@@ -79,56 +79,123 @@ public class StyleDefinition {
         this.styleRules = new ArrayList<LayerRule>();
         ArrayList<Map<String, Object>> mapStyleRules = (ArrayList<Map<String, Object>>) map.get("styleRules");
         if (mapStyleRules != null) {
-            mapStyleRules.forEach(mapLayerRule -> {
+
+            for (int idx = 0; idx < mapStyleRules.size(); idx++) {
+                Map<String, Object> mapLayerRule = mapStyleRules.get(idx);
                 mapLayerRule.put("layerGroup", this.layerGroup);
                 mapLayerRule.put("environment", this.environment);
                 mapLayerRule.put("linked", Boolean.TRUE);
-                this.styleRules.add(new LayerRule(mapLayerRule));
-            });
+
+                LayerRule layerRule = new LayerRule(mapLayerRule);
+                if (layerRule.getListOrder() == null) {
+                    layerRule.setListOrder(idx);
+                }
+                this.styleRules.add(layerRule);
+            };
         }
 
         this.sizeRules = new ArrayList<LayerRule>();
         ArrayList<Map<String, Object>> mapSizeRules = (ArrayList<Map<String, Object>>) map.get("sizeRules");
         if (mapSizeRules != null) {
-            mapSizeRules.forEach(mapLayerRule -> {
+
+            for (int idx = 0; idx < mapSizeRules.size(); idx++) {
+                Map<String, Object> mapLayerRule = mapSizeRules.get(idx);
+                mapLayerRule.put("layerGroup", this.layerGroup);
+                mapLayerRule.put("environment", this.environment);
+                mapLayerRule.put("linked", Boolean.TRUE);
+
+                LayerRule layerRule = new LayerRule(mapLayerRule);
+                if (layerRule.getListOrder() == null) {
+                    layerRule.setListOrder(idx);
+                }
+
+                this.sizeRules.add(layerRule);
+            }
+
+            /*mapSizeRules.forEach(mapLayerRule -> {
                 mapLayerRule.put("layerGroup", this.layerGroup);
                 mapLayerRule.put("environment", this.environment);
                 mapLayerRule.put("linked", Boolean.TRUE);
                 this.sizeRules.add(new LayerRule(mapLayerRule));
-            });
+            });*/
         }
 
         this.labelRules = new ArrayList<LayerRule>();
         ArrayList<Map<String, Object>> mapLabelRules = (ArrayList<Map<String, Object>>) map.get("labelRules");
         if (mapLabelRules != null) {
-            mapLabelRules.forEach(mapLayerRule -> {
+
+            for (int idx = 0; idx < mapLabelRules.size(); idx++) {
+                Map<String, Object> mapLayerRule = mapLabelRules.get(idx);
+                mapLayerRule.put("layerGroup", this.layerGroup);
+                mapLayerRule.put("environment", this.environment);
+                mapLayerRule.put("linked", Boolean.TRUE);
+
+                LayerRule layerRule = new LayerRule(mapLayerRule);
+                if (layerRule.getListOrder() == null) {
+                    layerRule.setListOrder(idx);
+                }
+
+                this.labelRules.add(layerRule);
+            }
+
+            /*mapLabelRules.forEach(mapLayerRule -> {
                 mapLayerRule.put("layerGroup", this.layerGroup);
                 mapLayerRule.put("environment", this.environment);
                 mapLayerRule.put("linked", Boolean.TRUE);
                 this.labelRules.add(new LayerRule(mapLayerRule));
-            });
+            });*/
         }
 
         this.tooltipRules = new ArrayList<LayerRule>();
         ArrayList<Map<String, Object>> mapTootipRules = (ArrayList<Map<String, Object>>) map.get("tooltipRules");
         if (mapTootipRules != null) {
-            mapTootipRules.forEach(mapLayerRule -> {
+
+            for (int idx = 0; idx < mapTootipRules.size(); idx++) {
+                Map<String, Object> mapLayerRule = mapTootipRules.get(idx);
+                mapLayerRule.put("layerGroup", this.layerGroup);
+                mapLayerRule.put("environment", this.environment);
+                mapLayerRule.put("linked", Boolean.TRUE);
+
+                LayerRule layerRule = new LayerRule(mapLayerRule);
+                if (layerRule.getListOrder() == null) {
+                    layerRule.setListOrder(idx);
+                }
+
+                this.tooltipRules.add(layerRule);
+            }
+
+            /*mapTootipRules.forEach(mapLayerRule -> {
                 mapLayerRule.put("layerGroup", this.layerGroup);
                 mapLayerRule.put("environment", this.environment);
                 mapLayerRule.put("linked", Boolean.TRUE);
                 this.tooltipRules.add(new LayerRule(mapLayerRule));
-            });
+            });*/
         }
 
         this.menuHeaderDataRules = new ArrayList<LayerRule>();
         ArrayList<Map<String, Object>> mapMenuHeaderDataRules = (ArrayList<Map<String, Object>>) map.get("menuHeaderDataRules");
         if (mapMenuHeaderDataRules != null) {
-            mapMenuHeaderDataRules.forEach(mapLayerRule -> {
+
+            for (int idx = 0; idx < mapMenuHeaderDataRules.size(); idx++) {
+                Map<String, Object> mapLayerRule = mapMenuHeaderDataRules.get(idx);
+                mapLayerRule.put("layerGroup", this.layerGroup);
+                mapLayerRule.put("environment", this.environment);
+                mapLayerRule.put("linked", Boolean.TRUE);
+
+                LayerRule layerRule = new LayerRule(mapLayerRule);
+                if (layerRule.getListOrder() == null) {
+                    layerRule.setListOrder(idx);
+                }
+
+                this.menuHeaderDataRules.add(layerRule);
+            }
+
+            /*mapMenuHeaderDataRules.forEach(mapLayerRule -> {
                 mapLayerRule.put("layerGroup", this.layerGroup);
                 mapLayerRule.put("environment", this.environment);
                 mapLayerRule.put("linked", Boolean.TRUE);
                 this.menuHeaderDataRules.add(new LayerRule(mapLayerRule));
-            });
+            });*/
         }
 
         this.existingStyleOverrideMode = (String) map.get("existingStyleOverrideMode");

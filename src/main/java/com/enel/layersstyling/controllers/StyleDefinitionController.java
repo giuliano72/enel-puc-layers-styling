@@ -1,6 +1,7 @@
 package com.enel.layersstyling.controllers;
 
 import ch.qos.logback.classic.encoder.JsonEncoder;
+import com.enel.layersstyling.models.UpdateStyleDefinitionsStyleRule;
 import com.enel.layersstyling.repositories.StyleDefinitonRepository;
 import com.enel.layersstyling.entities.StyleDefinition;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -88,6 +89,15 @@ class StyleDefinitionController {
         return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
     }
 
+    @PutMapping("{styleDefinitionId}/styleRules")
+    public ResponseEntity<Boolean> updateStyleDefinitionsStyleRules(
+            @RequestBody UpdateStyleDefinitionsStyleRule value,
+            @PathVariable Long styleDefinitionId
+    ) {
+        logger.debug("Executing updateStyleDefinitionsStyleRules {} ...", styleDefinitionId);
+        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+    }
+
 
     @PostMapping("import")
     public ResponseEntity<Integer> importStyleDefinitions(
@@ -97,7 +107,7 @@ class StyleDefinitionController {
             @RequestParam(required = false) String country,
             @RequestParam(required = false) String environment
     ) {
-        logger.debug("Executiong importStyleDefinitions ...");
+        logger.debug("Executing importStyleDefinitions ...");
         logger.debug("Imported values: {}", values.size());
 
         List<StyleDefinition> styleDefinitions = new ArrayList<StyleDefinition>();
