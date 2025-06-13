@@ -116,13 +116,6 @@ public class StyleDefinition {
 
                 this.sizeRules.add(layerRule);
             }
-
-            /*mapSizeRules.forEach(mapLayerRule -> {
-                mapLayerRule.put("layerGroup", this.layerGroup);
-                mapLayerRule.put("environment", this.environment);
-                mapLayerRule.put("linked", Boolean.TRUE);
-                this.sizeRules.add(new LayerRule(mapLayerRule));
-            });*/
         }
 
         this.labelRules = new ArrayList<LayerRule>();
@@ -142,13 +135,6 @@ public class StyleDefinition {
 
                 this.labelRules.add(layerRule);
             }
-
-            /*mapLabelRules.forEach(mapLayerRule -> {
-                mapLayerRule.put("layerGroup", this.layerGroup);
-                mapLayerRule.put("environment", this.environment);
-                mapLayerRule.put("linked", Boolean.TRUE);
-                this.labelRules.add(new LayerRule(mapLayerRule));
-            });*/
         }
 
         this.tooltipRules = new ArrayList<LayerRule>();
@@ -168,13 +154,6 @@ public class StyleDefinition {
 
                 this.tooltipRules.add(layerRule);
             }
-
-            /*mapTootipRules.forEach(mapLayerRule -> {
-                mapLayerRule.put("layerGroup", this.layerGroup);
-                mapLayerRule.put("environment", this.environment);
-                mapLayerRule.put("linked", Boolean.TRUE);
-                this.tooltipRules.add(new LayerRule(mapLayerRule));
-            });*/
         }
 
         this.menuHeaderDataRules = new ArrayList<LayerRule>();
@@ -194,13 +173,6 @@ public class StyleDefinition {
 
                 this.menuHeaderDataRules.add(layerRule);
             }
-
-            /*mapMenuHeaderDataRules.forEach(mapLayerRule -> {
-                mapLayerRule.put("layerGroup", this.layerGroup);
-                mapLayerRule.put("environment", this.environment);
-                mapLayerRule.put("linked", Boolean.TRUE);
-                this.menuHeaderDataRules.add(new LayerRule(mapLayerRule));
-            });*/
         }
 
         this.existingStyleOverrideMode = (String) map.get("existingStyleOverrideMode");

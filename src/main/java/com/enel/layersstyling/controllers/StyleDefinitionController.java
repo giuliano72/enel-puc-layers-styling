@@ -1,17 +1,16 @@
 package com.enel.layersstyling.controllers;
 
-import ch.qos.logback.classic.encoder.JsonEncoder;
 import com.enel.layersstyling.entities.LayerRule;
-import com.enel.layersstyling.models.UpdateStyleDefinitionsStyleRule;
+import com.enel.layersstyling.models.MoveStyleDefinitionsStyleRule;
 import com.enel.layersstyling.repositories.StyleDefinitonRepository;
 import com.enel.layersstyling.entities.StyleDefinition;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -91,11 +90,41 @@ class StyleDefinitionController {
     }
 
     @PutMapping("{styleDefinitionId}/styleRules")
-    public ResponseEntity<List<LayerRule>> updateStyleDefinitionsStyleRules(
-            @RequestBody UpdateStyleDefinitionsStyleRule value,
+    public ResponseEntity<LayerRule> updateStyleRule(
+            @RequestBody LayerRule updatedStyleRule,
             @PathVariable Long styleDefinitionId
     ) {
-        logger.debug("Executing updateStyleDefinitionsStyleRules {} ...", styleDefinitionId);
+        logger.debug("Executing updateStyleRule styleDefinitionId: {} ...", styleDefinitionId);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
+
+        if(styleDefinition == null){
+            return new ResponseEntity<LayerRule>(HttpStatus.NOT_FOUND);
+        }
+
+        LayerRule styleRule = null;
+        for(int index = 0; index < styleDefinition.getStyleRules().size(); index++){
+            if (styleDefinition.getStyleRules().get(index).getId().equals(updatedStyleRule.getId())){
+                styleRule = styleDefinition.getStyleRules().get(index);
+            }
+        }
+
+        if(styleRule == null){
+            return new ResponseEntity<LayerRule>(HttpStatus.NOT_FOUND);
+        }
+
+        logger.debug("Executing updateStyleRule styleRuleId: {} ...", styleRule.getId());
+        styleRule.update(updatedStyleRule, this.entityManager);
+
+        return new ResponseEntity<LayerRule>(styleRule, HttpStatus.OK);
+    }
+
+    @PutMapping("{styleDefinitionId}/styleRules/moveStyleRule")
+    public ResponseEntity<List<LayerRule>> moveStyleRule(
+            @RequestBody MoveStyleDefinitionsStyleRule value,
+            @PathVariable Long styleDefinitionId
+    ) {
+        logger.debug("Executing moveStyleRule styleDefinitionId: {} ...", styleDefinitionId);
 
         StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
 
@@ -124,10 +153,10 @@ class StyleDefinitionController {
             return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
         }
 
-        if(value.getAction().equals("moveDown")) {
+        if(value.getDirection().equals("down")) {
 
             if (styleRuleIndex == styleDefinition.getStyleRules().size() - 1) {
-                logger.error("ERROR Executing updateStyleDefinitionsStyleRules {} INDEX OUT OF END BOUNDS...", styleRuleIndex);
+                logger.error("ERROR Executing moveStyleRule {} INDEX OUT OF END BOUNDS... ", styleRuleIndex);
                 return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
             }
 
@@ -139,10 +168,10 @@ class StyleDefinitionController {
             styleDefinition.getStyleRules().set(styleRuleIndex + 1, current);
             styleDefinition.getStyleRules().set(styleRuleIndex, next);
 
-        } else if(value.getAction().equals("moveUp")) {
+        } else if(value.getDirection().equals("up")) {
 
             if (styleRuleIndex == 0) {
-                logger.error("ERROR Executing updateStyleDefinitionsStyleRules {} INDEX OUT OF START BOUNDS...", styleRuleIndex);
+                logger.error("ERROR Executing moveStyleRule {} INDEX OUT OF START BOUNDS... ", styleRuleIndex);
                 return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
             }
 

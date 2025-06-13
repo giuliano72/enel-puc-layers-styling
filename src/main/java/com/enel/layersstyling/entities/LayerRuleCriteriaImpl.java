@@ -30,11 +30,30 @@ public class LayerRuleCriteriaImpl extends LayerRuleCriteria {
         super();
     }
 
+    public LayerRuleCriteriaImpl(Long id, Integer listOrder, String criteriaOperator, String field, String value, String fieldType, String operator) {
+        super(id, listOrder, criteriaOperator);
+        this.field = field;
+        this.value = value;
+        this.fieldType = fieldType;
+        this.operator = operator;
+    }
+
     public LayerRuleCriteriaImpl(Map<String, Object> mapCriteria) {
         super(mapCriteria);
         this.field = (String) mapCriteria.get("field");
         this.value = (String) mapCriteria.get("value");
         this.fieldType = (String) mapCriteria.get("fieldType");
         this.operator = (String) mapCriteria.get("operator");
+    }
+
+    public void update(LayerRuleCriteria layerRuleCriteria) {
+        super.update(layerRuleCriteria);
+
+        if (layerRuleCriteria instanceof LayerRuleCriteriaImpl) {
+            this.field = ((LayerRuleCriteriaImpl) layerRuleCriteria).field;
+            this.value = ((LayerRuleCriteriaImpl) layerRuleCriteria).value;
+            this.fieldType = ((LayerRuleCriteriaImpl) layerRuleCriteria).fieldType;
+            this.operator = ((LayerRuleCriteriaImpl) layerRuleCriteria).operator;
+        }
     }
 }

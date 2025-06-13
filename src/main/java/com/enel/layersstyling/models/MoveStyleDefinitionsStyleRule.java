@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class UpdateStyleDefinitionsStyleRule {
-    private String action;
+public class MoveStyleDefinitionsStyleRule {
+    private String direction;
     private Long styleRuleId;
 }

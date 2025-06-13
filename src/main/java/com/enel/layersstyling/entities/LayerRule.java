@@ -9,6 +9,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Setter
 @Getter
@@ -100,17 +101,59 @@ public class LayerRule {
                     this.criteria.add(layerRuleCriteriaImpl);
                 }
             }
+        }
+    }
 
-            /*mapCriteriaList.forEach(mapCriteria -> {
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof LayerRule layerRule)) return false;
+        return Objects.equals(id, layerRule.id);
+    }
 
-                String ruleRef = (String) mapCriteria.get("ruleRef");
-                if (ruleRef != null) {
-                    this.criteria.add(new LayerRuleRefCriteria(mapCriteria) );
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+
+    public void update(LayerRule layerRule, EntityManager entityManager) {
+        this.layerGroup = layerRule.getLayerGroup();
+        this.environment = layerRule.getEnvironment();
+        this.linked = layerRule.getLinked();
+        this.listOrder = layerRule.getListOrder();
+        this.value = layerRule.getValue();
+
+        if ((layerRule.getCriteria() != null) && !layerRule.getCriteria().isEmpty()) {
+
+            // ADD NEWS LAYER RULE CRITERIA
+            for (LayerRuleCriteria layerRuleCriteria : layerRule.getCriteria()){
+                int index = this.criteria.indexOf(layerRuleCriteria);
+
+                if (index != -1) {
+                    System.out.println("layerRuleCriteria FOUND, updating layerRuleCriteria id: "+layerRuleCriteria.getId());
+                    this.criteria.get(index).update(layerRuleCriteria);
 
                 } else {
-                    this.criteria.add(new LayerRuleCriteriaImpl(mapCriteria) );
+                    System.out.println("layerRuleCriteria NOT FOUND, new layerRuleCriteria id: "+layerRuleCriteria.getId());
+                    entityManager.persist(layerRuleCriteria);
+                    entityManager.flush();
+                    this.criteria.add(layerRuleCriteria);
                 }
-            });*/
+            }
+
+            // REMOVE OLDS LAYER RULE CRITERIA
+            for (LayerRuleCriteria layerRuleCriteria : this.getCriteria()){
+                int index = layerRule.criteria.indexOf(layerRuleCriteria);
+                if (index == -1) {
+                    this.getCriteria().remove(layerRuleCriteria);
+                }
+            }
+
+            this.criteria.sort((o1, o2) -> {
+                return o1.getListOrder().compareTo(o2.getListOrder());
+            });
+
+        } else {
+            this.criteria.clear();
         }
     }
 }

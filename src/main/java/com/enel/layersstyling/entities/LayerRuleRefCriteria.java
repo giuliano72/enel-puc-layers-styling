@@ -25,4 +25,17 @@ public class LayerRuleRefCriteria extends LayerRuleCriteria {
         super(mapCriteria);
         this.ruleRef = (String) mapCriteria.get("ruleRef");
     }
+
+    public LayerRuleRefCriteria(Long id, Integer listOrder, String criteriaOperator, String ruleRef) {
+        super(id, listOrder, criteriaOperator);
+        this.ruleRef = ruleRef;
+    }
+
+    public void update(LayerRuleCriteria layerRuleCriteria) {
+        super.update(layerRuleCriteria);
+
+        if (layerRuleCriteria instanceof LayerRuleRefCriteria) {
+            this.ruleRef = ((LayerRuleRefCriteria) layerRuleCriteria).ruleRef;
+        }
+    }
 }
