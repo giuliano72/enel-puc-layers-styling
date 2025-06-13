@@ -37,18 +37,23 @@ public class StyleDefinition {
     private List<MapLayerStyle> styles;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("listOrder")
     private List<LayerRule> styleRules;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("listOrder")
     private List<LayerRule> sizeRules;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("listOrder")
     private List<LayerRule> labelRules;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("listOrder")
     private List<LayerRule> tooltipRules;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("listOrder")
     private List<LayerRule> menuHeaderDataRules;
 
     @Column

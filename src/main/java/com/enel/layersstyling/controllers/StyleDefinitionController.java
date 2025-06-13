@@ -1,6 +1,7 @@
 package com.enel.layersstyling.controllers;
 
 import ch.qos.logback.classic.encoder.JsonEncoder;
+import com.enel.layersstyling.entities.LayerRule;
 import com.enel.layersstyling.models.UpdateStyleDefinitionsStyleRule;
 import com.enel.layersstyling.repositories.StyleDefinitonRepository;
 import com.enel.layersstyling.entities.StyleDefinition;
@@ -90,12 +91,71 @@ class StyleDefinitionController {
     }
 
     @PutMapping("{styleDefinitionId}/styleRules")
-    public ResponseEntity<Boolean> updateStyleDefinitionsStyleRules(
+    public ResponseEntity<List<LayerRule>> updateStyleDefinitionsStyleRules(
             @RequestBody UpdateStyleDefinitionsStyleRule value,
             @PathVariable Long styleDefinitionId
     ) {
         logger.debug("Executing updateStyleDefinitionsStyleRules {} ...", styleDefinitionId);
-        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
+
+        if (styleDefinition == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
+        }
+
+        if (value == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
+        }
+
+        if(value.getStyleRuleId() == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
+        }
+
+        int styleRuleIndex = -1;
+
+        for (int index = 0; index < styleDefinition.getStyleRules().size(); index++){
+            if (styleDefinition.getStyleRules().get(index).getId().equals(value.getStyleRuleId())) {
+                styleRuleIndex = index;
+                break;
+            }
+        }
+
+        if (styleRuleIndex == -1) {
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
+        }
+
+        if(value.getAction().equals("moveDown")) {
+
+            if (styleRuleIndex == styleDefinition.getStyleRules().size() - 1) {
+                logger.error("ERROR Executing updateStyleDefinitionsStyleRules {} INDEX OUT OF END BOUNDS...", styleRuleIndex);
+                return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
+            }
+
+            LayerRule current = styleDefinition.getStyleRules().get( styleRuleIndex);
+            LayerRule next = styleDefinition.getStyleRules().get( styleRuleIndex + 1);
+            Integer nextOrder = next.getListOrder();
+            next.setListOrder(current.getListOrder());
+            current.setListOrder(nextOrder);
+            styleDefinition.getStyleRules().set(styleRuleIndex + 1, current);
+            styleDefinition.getStyleRules().set(styleRuleIndex, next);
+
+        } else if(value.getAction().equals("moveUp")) {
+
+            if (styleRuleIndex == 0) {
+                logger.error("ERROR Executing updateStyleDefinitionsStyleRules {} INDEX OUT OF START BOUNDS...", styleRuleIndex);
+                return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
+            }
+
+            LayerRule current = styleDefinition.getStyleRules().get( styleRuleIndex);
+            LayerRule previous = styleDefinition.getStyleRules().get( styleRuleIndex - 1);
+            Integer previousOrder = previous.getListOrder();
+            previous.setListOrder(current.getListOrder());
+            current.setListOrder(previousOrder);
+            styleDefinition.getStyleRules().set(styleRuleIndex - 1, current);
+            styleDefinition.getStyleRules().set(styleRuleIndex, previous);
+        }
+
+        return new ResponseEntity<List<LayerRule>>(styleDefinition.getStyleRules(), HttpStatus.OK);
     }
 
 

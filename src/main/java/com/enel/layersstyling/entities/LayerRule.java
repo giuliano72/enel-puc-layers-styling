@@ -44,6 +44,7 @@ public class LayerRule {
             joinColumns=@JoinColumn(name="rule_id"),
             inverseJoinColumns=@JoinColumn(name="criteria_id")
     )
+    @OrderBy("listOrder")
     private List<LayerRuleCriteria> criteria;
 
     public LayerRule() {}
