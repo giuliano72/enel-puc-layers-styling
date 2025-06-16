@@ -6,8 +6,6 @@ import com.enel.layersstyling.entities.LayerRuleRefCriteria;
 import com.fasterxml.jackson.core.JacksonException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.databind.node.IntNode;
-import com.fasterxml.jackson.databind.node.LongNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,6 +51,7 @@ public class LayerRuleCriteriaDeserializer extends JsonDeserializer<LayerRuleCri
         Integer listOrder =  node.get("listOrder").asInt();
         String criteriaOperator = node.get("criteriaOperator").asText();
         String ruleRef = node.get("ruleRef").asText();
+
         return new LayerRuleRefCriteria(id, listOrder, criteriaOperator, ruleRef);
     }
 
@@ -68,6 +67,6 @@ public class LayerRuleCriteriaDeserializer extends JsonDeserializer<LayerRuleCri
         String fieldType = node.get("fieldType").asText();
         String operator = node.get("operator").asText();
 
-        return new LayerRuleCriteriaImpl(id, listOrder, criteriaOperator, field, fieldType, value, operator);
+        return new LayerRuleCriteriaImpl(id, listOrder, criteriaOperator, field, value, fieldType, operator);
     }
 }
