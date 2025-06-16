@@ -5,12 +5,10 @@ import com.enel.layersstyling.models.MoveStyleDefinitionsStyleRule;
 import com.enel.layersstyling.repositories.StyleDefinitonRepository;
 import com.enel.layersstyling.entities.StyleDefinition;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.module.SimpleModule;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -89,7 +87,64 @@ class StyleDefinitionController {
         return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
     }
 
-    @PutMapping("{styleDefinitionId}/styleRules")
+    @DeleteMapping("{styleDefinitionId}/styleRules/{styleRuleId}/delete")
+    public ResponseEntity<List<LayerRule>> deleteStyleDefinitionStyleRule(
+            @PathVariable(required = true) Long styleDefinitionId,
+            @PathVariable(required = true) Long styleRuleId
+    ) {
+        logger.debug("Executing deleteStyleDefinitionStyleRule ...");
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
+
+        if (styleDefinition == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
+        }
+
+        LayerRule styleRule = null;
+        int index = 0;
+        int styleRuleIndex = 0;
+        for(LayerRule item: styleDefinition.getStyleRules()) {
+            if (item.getId().equals(styleRuleId)) {
+                styleRule = item;
+                styleRuleIndex = index;
+            }
+            index++;
+        }
+
+        if (styleRule == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
+        }
+
+        styleDefinition.getStyleRules().remove(styleRuleIndex);
+
+        return new ResponseEntity<List<LayerRule>>(styleDefinition.getStyleRules(), HttpStatus.OK);
+    }
+
+    @PostMapping("{styleDefinitionId}/styleRules/add")
+    public ResponseEntity<List<LayerRule>> addStyleRule(
+            @RequestBody LayerRule newStyleRule,
+            @PathVariable Long styleDefinitionId
+    ) {
+        logger.debug("Executing addStyleRule styleDefinitionId: {} ...", styleDefinitionId);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
+
+        if(styleDefinition == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.NOT_FOUND);
+        }
+
+        if(newStyleRule == null){
+            return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
+        }
+
+        this.entityManager.persist(newStyleRule);
+        styleDefinition.getStyleRules().add(newStyleRule);
+
+
+        return new ResponseEntity<List<LayerRule>>(styleDefinition.getStyleRules(), HttpStatus.OK);
+    }
+
+    @PutMapping("{styleDefinitionId}/styleRules/update")
     public ResponseEntity<LayerRule> updateStyleRule(
             @RequestBody LayerRule updatedStyleRule,
             @PathVariable Long styleDefinitionId
@@ -124,7 +179,8 @@ class StyleDefinitionController {
             @RequestBody MoveStyleDefinitionsStyleRule value,
             @PathVariable Long styleDefinitionId
     ) {
-        logger.debug("Executing moveStyleRule styleDefinitionId: {} ...", styleDefinitionId);
+
+
 
         StyleDefinition styleDefinition = this.styleDefinitonRepository.findById(styleDefinitionId).orElse(null);
 
@@ -140,11 +196,19 @@ class StyleDefinitionController {
             return new ResponseEntity<List<LayerRule>>(HttpStatus.BAD_REQUEST);
         }
 
+        Long styleRuleId = value.getStyleRuleId();
+        logger.debug("Executing moveStyleRule styleRuleId: {}, styleDefinitionId: {} ...", styleRuleId,  styleDefinitionId);
+
         int styleRuleIndex = -1;
 
         for (int index = 0; index < styleDefinition.getStyleRules().size(); index++){
+            Long currentStyleRuleId = styleDefinition.getStyleRules().get(index).getId();
+
+            logger.debug("Executing moveStyleRule currentStyleRuleId: {}, styleRuleId: {} ...", currentStyleRuleId,  styleRuleId);
+
             if (styleDefinition.getStyleRules().get(index).getId().equals(value.getStyleRuleId())) {
                 styleRuleIndex = index;
+                logger.debug("Executing moveStyleRule found styleRuleId: {}({}) at index: {}", styleRuleId, styleDefinition.getStyleRules().get(index).getValue(), styleRuleIndex);
                 break;
             }
         }
@@ -162,11 +226,16 @@ class StyleDefinitionController {
 
             LayerRule current = styleDefinition.getStyleRules().get( styleRuleIndex);
             LayerRule next = styleDefinition.getStyleRules().get( styleRuleIndex + 1);
-            Integer nextOrder = next.getListOrder();
+            Integer nextOrder = Integer.valueOf(next.getListOrder().toString());
+
             next.setListOrder(current.getListOrder());
             current.setListOrder(nextOrder);
-            styleDefinition.getStyleRules().set(styleRuleIndex + 1, current);
-            styleDefinition.getStyleRules().set(styleRuleIndex, next);
+
+            styleDefinition.getStyleRules().sort((o1, o2) -> {
+                Integer order1 = o1.getListOrder();
+                Integer order2 = o2.getListOrder();
+                return order1.compareTo(order2);
+            });
 
         } else if(value.getDirection().equals("up")) {
 
@@ -177,11 +246,16 @@ class StyleDefinitionController {
 
             LayerRule current = styleDefinition.getStyleRules().get( styleRuleIndex);
             LayerRule previous = styleDefinition.getStyleRules().get( styleRuleIndex - 1);
-            Integer previousOrder = previous.getListOrder();
+            Integer previousOrder = Integer.valueOf(previous.getListOrder().toString());
+
             previous.setListOrder(current.getListOrder());
             current.setListOrder(previousOrder);
-            styleDefinition.getStyleRules().set(styleRuleIndex - 1, current);
-            styleDefinition.getStyleRules().set(styleRuleIndex, previous);
+
+            styleDefinition.getStyleRules().sort((o1, o2) -> {
+                Integer order1 = o1.getListOrder();
+                Integer order2 = o2.getListOrder();
+                return order1.compareTo(order2);
+            });
         }
 
         return new ResponseEntity<List<LayerRule>>(styleDefinition.getStyleRules(), HttpStatus.OK);
