@@ -10,7 +10,9 @@ public interface StyleDefinitonRepository extends JpaRepository<StyleDefinition,
     List<StyleDefinition> findByLayerGroupAndCountryAndEnvironment(String layerGroup, String country,String environment);
     List<StyleDefinition> findByLayerGroupAndCountryAndEnvironmentAndClassIds(String layerGroup, String country, String environment, String classIds);
 
+    List<StyleDefinition> deleteByLayerGroupAndClassIds(String layerGroup, String classIds);
     List<StyleDefinition> deleteByLayerGroupAndCountryAndEnvironment(String layerGroup, String country,String environment);
+    List<StyleDefinition> deleteByLayerGroup(String layerGroup);
 
     /*
     List<StyleDefinition> findByLayerGroup(String layerGroup);

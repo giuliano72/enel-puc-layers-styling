@@ -35,7 +35,6 @@ class StyleDefinitionController {
     }
 
 
-
     @GetMapping("")
     public ResponseEntity<StyleDefinition[]> listStyleDefinitions(
             @RequestParam() String layerGroup,
@@ -63,6 +62,59 @@ class StyleDefinitionController {
         return new ResponseEntity<StyleDefinition[]>(styleDefinitions.toArray(new StyleDefinition[count]), HttpStatus.OK);
     }
 
+    @PostMapping("new")
+    public ResponseEntity<StyleDefinition> newStyleDefinition(
+            @RequestBody StyleDefinition styleDefinition
+    ) {
+        this.entityManager.persist(styleDefinition);
+        return new ResponseEntity<StyleDefinition>(styleDefinition, HttpStatus.OK);
+    }
+
+    @PutMapping("{styleDefinitionId}/moveToCountry")
+    public ResponseEntity<Boolean> moveToCountry(
+            @RequestBody String country,
+            @PathVariable(required = true) Long styleDefinitionId
+    ) {
+        logger.debug("Executing moveToCountry({}) -> {} ...", styleDefinitionId, country);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.getReferenceById(styleDefinitionId);
+        styleDefinition.setCountry(country);
+        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+    }
+
+    @PutMapping("{styleDefinitionId}/moveToEnvironment")
+    public ResponseEntity<Boolean> moveToEnvironment(
+            @RequestBody String environment,
+            @PathVariable(required = true) Long styleDefinitionId
+    ) {
+        logger.debug("Executing moveToEnvironment({}) -> {} ...", styleDefinitionId, environment);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.getReferenceById(styleDefinitionId);
+        styleDefinition.setEnvironment(environment);
+        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+    }
+
+    @DeleteMapping("{styleDefinitionId}/delete")
+    public ResponseEntity<Boolean> deleteStyleDefinition(
+            @PathVariable(required = true) Long styleDefinitionId
+    ) {
+        logger.debug("Executing deleteStyleDefinitions({}) ...", styleDefinitionId);
+
+        StyleDefinition styleDefinition = this.styleDefinitonRepository.getReferenceById(styleDefinitionId);
+        boolean isGlobal = (styleDefinition.getCountry() == null && styleDefinition.getEnvironment() == null);
+
+        if (isGlobal){
+            logger.debug("StyleDefinitonRepository deleteByLayerGroupAndClassIds({}, {}) ...", styleDefinition.getLayerGroup(), styleDefinition.getClassIds());
+            this.styleDefinitonRepository.deleteByLayerGroupAndClassIds(styleDefinition.getLayerGroup(), styleDefinition.getClassIds());
+
+        } else {
+            logger.debug("StyleDefinitonRepository deleteById({}) ...", styleDefinition.getId());
+            this.styleDefinitonRepository.deleteById(styleDefinitionId);
+        }
+
+        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+     }
+
     @DeleteMapping("delete")
     public ResponseEntity<Boolean> deleteStyleDefinitions(
             @RequestParam(required = false) String layerGroup,
@@ -72,16 +124,20 @@ class StyleDefinitionController {
         logger.debug("Executing deleteStyleDefinitions ...");
 
         if (layerGroup == null){
+            logger.debug("StyleDefinitonRepository deleteAll ...");
             this.styleDefinitonRepository.deleteAll();
 
         } else if ( country != null && environment == null){
+            logger.debug("StyleDefinitonRepository deleteByLayerGroupAndCountryAndEnvironment({}, {}, {}) ...", layerGroup, country, null);
             this.styleDefinitonRepository.deleteByLayerGroupAndCountryAndEnvironment(layerGroup, country, null);
 
         } else if ( country == null && environment != null){
+            logger.debug("StyleDefinitonRepository deleteByLayerGroupAndCountryAndEnvironment({}, {}, {}) ...", layerGroup, null, environment);
             this.styleDefinitonRepository.deleteByLayerGroupAndCountryAndEnvironment(layerGroup, null, environment);
 
         } else {
-            this.styleDefinitonRepository.deleteByLayerGroupAndCountryAndEnvironment(layerGroup, null, null);
+            logger.debug("StyleDefinitonRepository deleteByLayerGroup({}) ...", layerGroup);
+            this.styleDefinitonRepository.deleteByLayerGroup(layerGroup);
         }
 
         return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
